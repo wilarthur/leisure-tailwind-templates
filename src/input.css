@@ -1,1 +1,52 @@
 @import "tailwindcss";
+@theme {
+  --color-moc-orange: #faa103;
+  --color-moc-blue: #01216a;
+  --color-moc-grey: #d3d5e0;
+  --color-moc-red: #e40146;
+  --color-moc-lightblue: #0072ce;
+  --font-heading: "poppins", sans-serif;
+  --font-body: "inter-variable", sans-serif;
+}
+
+/* Set global fonts */
+h1 {
+  font-family: var(--font-heading);
+  font-size: 49px;
+  line-height: 130%;
+}
+
+h2 {
+  font-family: var(--font-heading);
+  font-size: 39px;
+  line-height: 130%;
+}
+
+h3 {
+  font-family: var(--font-heading);
+  font-size: 31px;
+  line-height: 130%;
+}
+
+h4 {
+  font-family: var(--font-heading);
+  font-size: 24px;
+  line-height: 130%;
+}
+h5 {
+  font-family: var(--font-heading);
+  font-size: 20px;
+  line-height: 130%;
+}
+h6 {
+  font-family: var(--font-heading);
+  font-size: 16px;
+  line-height: 130%;
+}
+
+p,
+span,
+a,
+li {
+  font-family: var(--font-body);
+}
