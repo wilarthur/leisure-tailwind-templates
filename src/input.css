@@ -49,4 +49,6 @@ span,
 a,
 li {
   font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 150%;
 }
