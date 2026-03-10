@@ -22,6 +22,8 @@
   --color-sports-dark-blue-20: #ccd3e1;
   --color-sports-dark-blue-10: #e6e9f0;
   --color-sports-dark-blue-hover: #001849;
+  --color-sports-white-hover: #ccc;
+  --color-sports-black-hover: #4c4c4c;
   --color-sports-yellow: #ffcc00;
   --font-heading: "poppins", sans-serif;
   --font-body: "inter-variable", sans-serif;
@@ -32,43 +34,55 @@ h1 {
   font-family: var(--font-heading);
   font-size: 49px;
   line-height: 130%;
+  margin-bottom: 2rem;
 }
 
 h2 {
   font-family: var(--font-heading);
   font-size: 39px;
   line-height: 130%;
+  margin-bottom: 2rem;
 }
 
 h3 {
   font-family: var(--font-heading);
   font-size: 31px;
   line-height: 130%;
+  margin-bottom: 2rem;
 }
 
 h4 {
   font-family: var(--font-heading);
   font-size: 24px;
   line-height: 130%;
+  margin-bottom: 2rem;
 }
 h5 {
   font-family: var(--font-heading);
   font-size: 20px;
   line-height: 130%;
+  margin-bottom: 2rem;
 }
 h6 {
   font-family: var(--font-heading);
   font-size: 16px;
   line-height: 130%;
+  margin-bottom: 2rem;
 }
 
 p,
 span,
 a,
-li {
+ul,
+ol {
   font-family: var(--font-body);
   font-size: 16px;
   line-height: 150%;
+  margin-bottom: 1rem;
 }
 
 /* Set global colors */
+:root {
+  --swiper-navigation-color: black;
+  --swiper-pagination-color: black;
+}

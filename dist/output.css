@@ -1,4 +1,5 @@
 /*! tailwindcss v4.2.1 | MIT License | https://tailwindcss.com */
+@layer properties;
 @layer theme, base, components, utilities;
 @layer theme {
   :root, :host {
@@ -6,13 +7,25 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
     --container-sm: 24rem;
+    --text-4xl: 2.25rem;
+    --text-4xl--line-height: calc(2.5 / 2.25);
+    --font-weight-bold: 700;
+    --radius-3xl: 1.5rem;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
+    --color-sports-mid-blue-20: #cce5ef;
+    --color-sports-green-20: #cce8d4;
+    --color-sports-darker-yellow-20: #fce9cc;
+    --color-sports-darker-yellow-10: #fdf4e5;
+    --color-sports-purple-20: #e2d2ef;
     --color-sports-dark-blue-100: #012169;
+    --color-sports-dark-blue-10: #e6e9f0;
     --color-sports-dark-blue-hover: #001849;
+    --color-sports-black-hover: #4c4c4c;
     --font-heading: "poppins", sans-serif;
     --font-body: "inter-variable", sans-serif;
   }
@@ -166,6 +179,30 @@
   }
 }
 @layer utilities {
+  .absolute {
+    position: absolute;
+  }
+  .right-0 {
+    right: calc(var(--spacing) * 0);
+  }
+  .right-10 {
+    right: calc(var(--spacing) * 10);
+  }
+  .bottom-0 {
+    bottom: calc(var(--spacing) * 0);
+  }
+  .z-10 {
+    z-index: 10;
+  }
+  .z-20 {
+    z-index: 20;
+  }
+  .col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+  .col-span-3 {
+    grid-column: span 3 / span 3;
+  }
   .container {
     width: 100%;
     @media (width >= 40rem) {
@@ -184,6 +221,9 @@
       max-width: 96rem;
     }
   }
+  .\!m-0 {
+    margin: calc(var(--spacing) * 0) !important;
+  }
   .mx-2 {
     margin-inline: calc(var(--spacing) * 2);
   }
@@ -196,11 +236,35 @@
   .my-5 {
     margin-block: calc(var(--spacing) * 5);
   }
+  .my-10 {
+    margin-block: calc(var(--spacing) * 10);
+  }
   .my-auto {
     margin-block: auto;
   }
+  .mt-20 {
+    margin-top: calc(var(--spacing) * 20);
+  }
+  .mr-3 {
+    margin-right: calc(var(--spacing) * 3);
+  }
+  .mb-12 {
+    margin-bottom: calc(var(--spacing) * 12);
+  }
+  .block {
+    display: block;
+  }
   .flex {
     display: flex;
+  }
+  .grid {
+    display: grid;
+  }
+  .h-56 {
+    height: calc(var(--spacing) * 56);
+  }
+  .h-72 {
+    height: calc(var(--spacing) * 72);
   }
   .w-full {
     width: 100%;
@@ -211,26 +275,132 @@
   .max-w-sm {
     max-width: var(--container-sm);
   }
+  .grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .grid-cols-6 {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+  .grid-rows-2 {
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+  }
+  .flex-col {
+    flex-direction: column;
+  }
   .justify-between {
     justify-content: space-between;
   }
   .justify-end {
     justify-content: flex-end;
   }
+  .gap-5 {
+    gap: calc(var(--spacing) * 5);
+  }
+  .gap-10 {
+    gap: calc(var(--spacing) * 10);
+  }
+  .rounded-3xl {
+    border-radius: var(--radius-3xl);
+  }
   .rounded-full {
     border-radius: calc(infinity * 1px);
+  }
+  .rounded-t-3xl {
+    border-top-left-radius: var(--radius-3xl);
+    border-top-right-radius: var(--radius-3xl);
+  }
+  .bg-black {
+    background-color: var(--color-black);
+  }
+  .bg-sports-dark-blue-10 {
+    background-color: var(--color-sports-dark-blue-10);
   }
   .bg-sports-dark-blue-100 {
     background-color: var(--color-sports-dark-blue-100);
   }
+  .bg-sports-darker-yellow-10 {
+    background-color: var(--color-sports-darker-yellow-10);
+  }
+  .bg-sports-darker-yellow-20 {
+    background-color: var(--color-sports-darker-yellow-20);
+  }
+  .bg-sports-green-20 {
+    background-color: var(--color-sports-green-20);
+  }
+  .bg-sports-mid-blue-20 {
+    background-color: var(--color-sports-mid-blue-20);
+  }
+  .bg-sports-purple-20 {
+    background-color: var(--color-sports-purple-20);
+  }
+  .bg-white {
+    background-color: var(--color-white);
+  }
+  .bg-\[url\(https\:\/\/blocks\.astratic\.com\/img\/general-img-landscape\.png\)\] {
+    background-image: url(https://blocks.astratic.com/img/general-img-landscape.png);
+  }
+  .bg-cover {
+    background-size: cover;
+  }
+  .bg-center {
+    background-position: center;
+  }
+  .p-10 {
+    padding: calc(var(--spacing) * 10);
+  }
+  .p-12 {
+    padding: calc(var(--spacing) * 12);
+  }
   .px-3 {
     padding-inline: calc(var(--spacing) * 3);
+  }
+  .px-4 {
+    padding-inline: calc(var(--spacing) * 4);
+  }
+  .px-5 {
+    padding-inline: calc(var(--spacing) * 5);
+  }
+  .px-20 {
+    padding-inline: calc(var(--spacing) * 20);
+  }
+  .px-40 {
+    padding-inline: calc(var(--spacing) * 40);
   }
   .py-1 {
     padding-block: calc(var(--spacing) * 1);
   }
+  .py-8 {
+    padding-block: calc(var(--spacing) * 8);
+  }
+  .py-12 {
+    padding-block: calc(var(--spacing) * 12);
+  }
+  .text-center {
+    text-align: center;
+  }
+  .text-left {
+    text-align: left;
+  }
+  .text-4xl {
+    font-size: var(--text-4xl);
+    line-height: var(--tw-leading, var(--text-4xl--line-height));
+  }
+  .font-bold {
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+  }
   .text-white {
     color: var(--color-white);
+  }
+  .hover\:bg-sports-black-hover {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-sports-black-hover);
+      }
+    }
   }
   .hover\:bg-sports-dark-blue-hover {
     &:hover {
@@ -251,34 +421,56 @@ h1 {
   font-family: var(--font-heading);
   font-size: 49px;
   line-height: 130%;
+  margin-bottom: 2rem;
 }
 h2 {
   font-family: var(--font-heading);
   font-size: 39px;
   line-height: 130%;
+  margin-bottom: 2rem;
 }
 h3 {
   font-family: var(--font-heading);
   font-size: 31px;
   line-height: 130%;
+  margin-bottom: 2rem;
 }
 h4 {
   font-family: var(--font-heading);
   font-size: 24px;
   line-height: 130%;
+  margin-bottom: 2rem;
 }
 h5 {
   font-family: var(--font-heading);
   font-size: 20px;
   line-height: 130%;
+  margin-bottom: 2rem;
 }
 h6 {
   font-family: var(--font-heading);
   font-size: 16px;
   line-height: 130%;
+  margin-bottom: 2rem;
 }
-p, span, a, li {
+p, span, a, ul, ol {
   font-family: var(--font-body);
   font-size: 16px;
   line-height: 150%;
+  margin-bottom: 1rem;
+}
+:root {
+  --swiper-navigation-color: black;
+  --swiper-pagination-color: black;
+}
+@property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
+}
+@layer properties {
+  @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
+    *, ::before, ::after, ::backdrop {
+      --tw-font-weight: initial;
+    }
+  }
 }
