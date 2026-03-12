@@ -193,9 +193,9 @@
             </div>
         </section>
         <section class="bg-sports-dark-blue-10 py-12">
-            <div class="container mx-auto bg-sports-purple-20 rounded-3xl text-center py-12">
+            <div class="container mx-auto px-5 md:px-0 bg-sports-purple-20 rounded-3xl text-center py-12">
                 <h2>What our members say</h2>
-                <p class="px-40">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur rem est quas
+                <p class="md:px-40">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur rem est quas
                     eligendi excepturi
                     molestias tempore accusantium in natus cupiditate praesentium, quam, iure culpa enim dolor
                     doloremque nesciunt nihil quae?</p>
@@ -431,7 +431,6 @@
     <!-- Initialize Swiper -->
     <script>
         var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 3,
             spaceBetween: 30,
             navigation: {
                 nextEl: ".swiper-button-next-custom",
@@ -439,6 +438,17 @@
             },
             pagination: {
                 el: ".swiper-pagination",
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 1,
+                },
+                768: {
+                    slidesPerView: 2,
+                },
+                1024: {
+                    slidesPerView: 3,
+                },
             },
             mousewheel: true,
             keyboard: true,
