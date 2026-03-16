@@ -474,6 +474,9 @@
   .overflow-hidden {
     overflow: hidden;
   }
+  .overflow-x-hidden {
+    overflow-x: hidden;
+  }
   .rounded-3xl {
     border-radius: var(--radius-3xl);
   }
