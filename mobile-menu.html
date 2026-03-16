@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage | Chelmsford City Sports</title>
+    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="stylesheet" href="https://use.typekit.net/lxk3dcf.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+    <nav>
+        <div class="container mx-auto flex justify-between">
+            <a href=" /"><img class="max-w-sm" src="/img/CCC Our Chelmsford Landscape RGB.png" alt=""></a>
+            <button><i class="bi bi-list text-4xl mr-5 hover:cursor-pointer"></i></button>
+            <div id="desktop" class="max-w-2/3 w-full my-auto hidden lg:block">
+                <ul class="flex justify-end my-5">
+                    <li
+                        class="bg-sports-dark-blue-100 text-white px-3 py-1 mx-3 rounded-full hover:bg-sports-dark-blue-hover">
+                        <a href="/">Join membership</a>
+                    </li>
+                    <li
+                        class="bg-sports-dark-blue-100 text-white px-3 py-1 mx-3 rounded-full hover:bg-sports-dark-blue-hover">
+                        <a href="/">Book
+                            activity</a>
+                    </li>
+                    <li
+                        class="bg-sports-dark-blue-100 text-white px-3 py-1 mx-3 rounded-full hover:bg-sports-dark-blue-hover">
+                        <a href="/">View
+                            prices</a>
+                    </li>
+                    <li
+                        class="bg-sports-dark-blue-100 text-white px-3 py-1 mx-3 rounded-full hover:bg-sports-dark-blue-hover">
+                        <a href="/">View
+                            timetables</a>
+                    </li>
+                </ul>
+                <ul class="flex justify-end my-5">
+                    <li class="mx-2 hover:underline"><a href="/">Activities</a></li>
+                    <li class="mx-2 hover:underline"><a href="/">Lessons</a></li>
+                    <li class="mx-2 hover:underline"><a href="/">Accessibility</a></li>
+                    <li class="mx-2 hover:underline"><a href="/">Location</a></li>
+                    <li class="mx-2 hover:underline"><a href="/">FAQs</a></li>
+                    <li class="mx-2 hover:underline"><a href="/">News</a></li>
+                    <li class="mx-2 hover:underline"><a href="/">Careers</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="mobile" class="bg-white block h-screen w-screen absolute left-0 top-0 z-50">
+            <div class="h-1/6 container mx-auto flex justify-between items-center">
+                <a class="!mb-0" href="/"><img class="max-w-sm" src="/img/CCC Our Chelmsford Landscape RGB.png"
+                        alt=""></a>
+                <button><i class="bi bi-x text-5xl mr-5 hover:cursor-pointer"></i></button>
+            </div>
+            <div class="h-5/6 flex flex-col justify-between">
+                <div class="mx-10">
+                    <ul>
+                        <li class="mb-5 text-xl"><a href="/">Activities</a></li>
+                        <li class="mb-5 text-xl"><a href="/">Lessons</a></li>
+                        <li class="mb-5 text-xl"><a href="/">Courses</a></li>
+                        <li class="mb-5 text-xl"><a href="/">Accessibility</a></li>
+                        <li class="mb-5 text-xl"><a href="/">Location</a></li>
+                        <li class="mb-5 text-xl"><a href="/">FAQs</a></li>
+                        <li class="mb-5 text-xl"><a href="/">News</a></li>
+                        <li class="mb-5 text-xl"><a href="/">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="mx-10">
+                    <ul class="flex flex-col">
+                        <li
+                            class="bg-sports-dark-blue-100 text-white px-3 py-1 rounded-full hover:bg-sports-dark-blue-hover mb-3">
+                            <a href="/">Join membership</a>
+                        </li>
+                        <li
+                            class="bg-sports-dark-blue-100 text-white px-3 py-1 rounded-full hover:bg-sports-dark-blue-hover mb-3">
+                            <a href="/">Book
+                                activity</a>
+                        </li>
+                        <li
+                            class="bg-sports-dark-blue-100 text-white px-3 py-1 rounded-full hover:bg-sports-dark-blue-hover mb-3">
+                            <a href="/">View
+                                prices</a>
+                        </li>
+                        <li
+                            class="bg-sports-dark-blue-100 text-white px-3 py-1 rounded-full hover:bg-sports-dark-blue-hover">
+                            <a href="/">View
+                                timetables</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            navigation: {
+                nextEl: ".swiper-button-next-custom",
+                prevEl: ".swiper-button-prev-custom",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 1,
+                },
+                768: {
+                    slidesPerView: 2,
+                },
+                1024: {
+                    slidesPerView: 3,
+                },
+            },
+            mousewheel: true,
+            keyboard: true,
+        });
+    </script>
+</body>
+
+</html>
