@@ -737,6 +737,11 @@
       display: block;
     }
   }
+  .lg\:hidden {
+    @media (width >= 64rem) {
+      display: none;
+    }
+  }
   .lg\:h-auto {
     @media (width >= 64rem) {
       height: auto;
