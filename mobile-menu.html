@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="overflow-hidden">
 
 <head>
     <meta charset="UTF-8">
@@ -16,8 +16,8 @@
     <nav>
         <div class="container mx-auto flex justify-between">
             <a href=" /"><img class="max-w-sm" src="/img/CCC Our Chelmsford Landscape RGB.png" alt=""></a>
-            <button><i class="bi bi-list text-4xl mr-5 hover:cursor-pointer"></i></button>
-            <div id="desktop" class="max-w-2/3 w-full my-auto hidden lg:block">
+            <button onclick="toggleMenu()"><i class="bi bi-list text-4xl mr-5 hover:cursor-pointer"></i></button>
+            <div id="desktop-menu" class="max-w-2/3 w-full my-auto hidden lg:block">
                 <ul class="flex justify-end my-5">
                     <li
                         class="bg-sports-dark-blue-100 text-white px-3 py-1 mx-3 rounded-full hover:bg-sports-dark-blue-hover">
@@ -50,13 +50,13 @@
                 </ul>
             </div>
         </div>
-        <div id="mobile" class="bg-white block h-screen w-screen absolute left-0 top-0 z-50">
-            <div class="h-1/6 container mx-auto flex justify-between items-center">
+        <div id="mobile-menu" class="bg-white block h-screen w-screen absolute left-0 top-0 z-50 translate-x-full">
+            <div class="h-1/12 container mx-auto mt-3 mb-5 flex justify-between items-center">
                 <a class="!mb-0" href="/"><img class="max-w-sm" src="/img/CCC Our Chelmsford Landscape RGB.png"
                         alt=""></a>
-                <button><i class="bi bi-x text-5xl mr-5 hover:cursor-pointer"></i></button>
+                <button onclick="toggleMenu()"><i class="bi bi-x text-5xl mr-5 hover:cursor-pointer"></i></button>
             </div>
-            <div class="h-5/6 flex flex-col justify-between">
+            <div class="h-10/12 flex flex-col justify-between">
                 <div class="mx-10">
                     <ul>
                         <li class="mb-5 text-xl"><a href="/">Activities</a></li>
@@ -128,6 +128,17 @@
             mousewheel: true,
             keyboard: true,
         });
+    </script>
+    <!-- Mobile Menu script -->
+    <script>
+        /* Mobile menu */
+
+        function toggleMenu() {
+            const mobileMenu = document.getElementById("mobile-menu");
+            const htmlTag = document.documentElement;
+            mobileMenu.classList.toggle("translate-x-full");
+            htmlTag.classList.toggle("overflow-hidden");
+        }
     </script>
 </body>
 
