@@ -30,7 +30,9 @@
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
+    --color-sports-mid-blue-60: #66b0d0;
     --color-sports-mid-blue-20: #cce5ef;
+    --color-sports-mid-blue-10: #e5f2f7;
     --color-sports-green-40: #99d1a9;
     --color-sports-green-20: #cce8d4;
     --color-sports-darker-yellow-100: #f09200;
@@ -44,6 +46,7 @@
     --color-sports-white-hover: #ccc;
     --color-sports-black-hover: #4c4c4c;
     --color-sports-yellow: #ffcc00;
+    --color-sports-grey: #ececec;
     --font-heading: "poppins", sans-serif;
     --font-body: "inter-variable", sans-serif;
   }
@@ -463,8 +466,17 @@
   .bg-sports-green-40 {
     background-color: var(--color-sports-green-40);
   }
+  .bg-sports-grey {
+    background-color: var(--color-sports-grey);
+  }
+  .bg-sports-mid-blue-10 {
+    background-color: var(--color-sports-mid-blue-10);
+  }
   .bg-sports-mid-blue-20 {
     background-color: var(--color-sports-mid-blue-20);
+  }
+  .bg-sports-mid-blue-60 {
+    background-color: var(--color-sports-mid-blue-60);
   }
   .bg-sports-purple-20 {
     background-color: var(--color-sports-purple-20);
@@ -710,6 +722,11 @@
       padding-inline: calc(var(--spacing) * 40);
     }
   }
+  .lg\:order-last {
+    @media (width >= 64rem) {
+      order: 9999;
+    }
+  }
   .lg\:col-span-2 {
     @media (width >= 64rem) {
       grid-column: span 2 / span 2;
@@ -718,6 +735,11 @@
   .lg\:col-span-3 {
     @media (width >= 64rem) {
       grid-column: span 3 / span 3;
+    }
+  }
+  .lg\:col-span-5 {
+    @media (width >= 64rem) {
+      grid-column: span 5 / span 5;
     }
   }
   .lg\:block {
@@ -750,9 +772,19 @@
       grid-template-columns: repeat(4, minmax(0, 1fr));
     }
   }
+  .lg\:grid-cols-10 {
+    @media (width >= 64rem) {
+      grid-template-columns: repeat(10, minmax(0, 1fr));
+    }
+  }
   .lg\:flex-row {
     @media (width >= 64rem) {
       flex-direction: row;
+    }
+  }
+  .lg\:px-0 {
+    @media (width >= 64rem) {
+      padding-inline: calc(var(--spacing) * 0);
     }
   }
   .lg\:px-40 {
