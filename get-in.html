@@ -147,8 +147,8 @@
                             class="bg-black text-white px-4 py-1 mr-3 rounded-full hover:bg-sports-black-hover"
                             href="/">CTA</a></div>
                 </div>
-
             </div>
+
         </section>
         <section class="bg-sports-mid-blue-20 py-12">
             <div class="container mx-auto px-5 md:px-0 text-center py-12">
@@ -277,7 +277,66 @@
                 </div>
             </div>
         </section>
-        <section class="bg-sports-green-20 py-12"></section>
+        <section class="bg-sports-green-20 py-12">
+            <div class="container mx-auto px-5 md:px-0 grid grid-cols-1 md:grid-cols-10 gap-10 mb-12">
+                <div class="col-span-10 md:col-span-5">
+                    <h2>Heading title</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae perferendis, fuga, saepe qui
+                        suscipit dolor cum repudiandae a quibusdam nemo adipisci similique dolore dolores molestias?
+                        Iure eum itaque laborum sit!</p>
+                    <div class="flex"><a
+                            class="bg-black text-white px-4 py-1 mr-3 rounded-full hover:bg-sports-black-hover"
+                            href="/">CTA</a></div>
+                    <button class="accordion rounded-2xl bg-sports-purple-100 text-white text-xl mb-3"><i
+                            class="bi bi-plus text-3xl mr-3"></i><i class="bi bi-dash text-3xl mr-3"
+                            style="display: none;"></i> Description
+                        heading</button>
+                    <div class="accordion-panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore
+                            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                            aliquip ex ea commodo
+                            consequat.</p>
+                    </div>
+                    <button class="accordion rounded-2xl bg-sports-purple-100 text-white text-xl mb-3"><i
+                            class="bi bi-plus text-3xl mr-3"></i><i class="bi bi-dash text-3xl mr-3"
+                            style="display: none;"></i> Description
+                        heading</button>
+                    <div class="accordion-panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore
+                            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                            aliquip ex ea commodo
+                            consequat.</p>
+                    </div>
+                    <button class="accordion rounded-2xl bg-sports-purple-100 text-white text-xl mb-3"><i
+                            class="bi bi-plus text-3xl mr-3"></i><i class="bi bi-dash text-3xl mr-3"
+                            style="display: none;"></i> Description
+                        heading</button>
+                    <div class="accordion-panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore
+                            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                            aliquip ex ea commodo
+                            consequat.</p>
+                    </div>
+                    <button class="accordion rounded-2xl bg-sports-purple-100 text-white text-xl mb-3"><i
+                            class="bi bi-plus text-3xl mr-3"></i><i class="bi bi-dash text-3xl mr-3"
+                            style="display: none;"></i> Description
+                        heading</button>
+                    <div class="accordion-panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore
+                            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                            aliquip ex ea commodo
+                            consequat.</p>
+                    </div>
+                </div>
+                <div class="col-span-10 md:col-span-5 order-first md:order-last"><img class="rounded-3xl mx-auto"
+                        src="https://blocks.astratic.com/img/general-img-landscape.png" alt="">
+                </div>
+            </div>
+        </section>
 
 
 
@@ -404,6 +463,29 @@
                 document.getElementById("countdownTimer").innerHTML = "EXPIRED";
             }
         }, 1000);
+    </script>
+    <!-- Accordions -->
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                var plus = this.querySelector(".bi-plus")
+                var minus = this.querySelector(".bi-dash")
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                    plus.style.display = "block";
+                    minus.style.display = "none";
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                    plus.style.display = "none";
+                    minus.style.display = "block"
+                }
+            });
+        }
     </script>
 
 

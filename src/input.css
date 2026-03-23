@@ -86,3 +86,31 @@ ol {
   --swiper-navigation-color: black;
   --swiper-pagination-color: black;
 }
+
+/* Accordions */
+/* Accordions */
+.accordion {
+  cursor: pointer;
+  padding: 0.5rem;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  display: flex;
+  align-items: center;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.accordion.active {
+  background-color: var(--color-sports-dark-blue-100);
+  color: white;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.accordion-panel {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
