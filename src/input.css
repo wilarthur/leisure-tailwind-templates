@@ -122,9 +122,11 @@ ol {
   height: 100%;
 }
 
-/* Event Swiper */
+/* Swiper buttons */
 .swiper-button-next-event,
-.swiper-button-prev-event {
+.swiper-button-prev-event,
+.swiper-button-next-gallery,
+.swiper-button-prev-gallery {
   position: absolute;
   top: 50%;
   width: calc(var(--swiper-navigation-size) / 44 * 27);
@@ -137,10 +139,12 @@ ol {
   justify-content: center;
 }
 
-.swiper-button-prev-event {
+.swiper-button-prev-event,
+.swiper-button-prev-gallery {
   left: 10px;
 }
 
-.swiper-button-next-event {
+.swiper-button-next-event,
+.swiper-button-next-gallery {
   right: 10px;
 }
