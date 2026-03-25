@@ -500,18 +500,29 @@
         <section class="bg-sports-green-20 py-12">
             <div class="container mx-auto">
                 <div class="swiper swiperGallery">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide bg-red-500 w-4/5">
-                            a
+                    <div class="swiper-wrapper max-h-[700px] h-full">
+                        <div class="swiper-slide">
+                            <div class="swiper-slide-content bg-white flex justify-center">
+                                <img src="https://img.freepik.com/free-photo/sports-tools_53876-138077.jpg" alt="">
+                            </div>
                         </div>
-                        <div class="swiper-slide bg-blue-500 w-4/5">
-                            b
+                        <div class="swiper-slide">
+                            <div class="swiper-slide-content bg-white flex justify-center">
+                                <img src="https://www.shutterstock.com/image-photo/beach-court-sports-tennis-football-260nw-2581571803.jpg"
+                                    alt="">
+                            </div>
                         </div>
-                        <div class="swiper-slide bg-green-500 w-4/5">
-                            c
+                        <div class="swiper-slide">
+                            <div class="swiper-slide-content bg-white flex justify-center">
+                                <img src="https://marketplace.canva.com/WpYTg/MAEw4JWpYTg/1/tl/canva-various-sport-equipment-gear-MAEw4JWpYTg.jpg"
+                                    alt="">
+                            </div>
                         </div>
-                        <div class="swiper-slide bg-yellow-500 w-4/5">
-                            d
+                        <div class="swiper-slide">
+                            <div class="swiper-slide-content bg-white flex justify-center">
+                                <img src="https://shawellness.com/shamagazine/wp-content/uploads/8020906020_71457e89f4_z.jpg"
+                                    alt="">
+                            </div>
                         </div>
 
                     </div>
@@ -781,7 +792,7 @@
                     slidesPerView: 3,
                 },
             },
-            mousewheel: true,
+            mousewheel: false,
             keyboard: true,
         });
     </script>
@@ -804,7 +815,7 @@
                     slidesPerView: 3,
                 },
             },
-            mousewheel: true,
+            mousewheel: false,
             keyboard: true,
         });
     </script>
@@ -813,13 +824,13 @@
         var swiper = new Swiper(".swiperGallery", {
             slidesPerView: 1.2,
             centeredSlides: true,
-            spaceBetween: 0,
+            spaceBetween: 50,
             loop: true,
             navigation: {
                 nextEl: ".swiper-button-next-gallery",
                 prevEl: ".swiper-button-prev-gallery",
             },
-            mousewheel: true,
+            mousewheel: false,
             keyboard: true,
         });
     </script>

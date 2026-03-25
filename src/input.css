@@ -148,3 +148,21 @@ ol {
 .swiper-button-next-gallery {
   right: 10px;
 }
+
+/* Swiper gallery */
+.swiperGallery .swiper-slide-next,
+.swiperGallery .swiper-slide-prev {
+  opacity: 0.5;
+  display: flex;
+  align-items: center;
+}
+
+.swiperGallery .swiper-slide-next .swiper-slide-content,
+.swiperGallery .swiper-slide-prev .swiper-slide-content {
+  height: 90%;
+  width: 100%;
+}
+
+.swiperGallery .swiper-slide {
+  height: auto;
+}

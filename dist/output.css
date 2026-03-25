@@ -7,10 +7,6 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-red-500: oklch(63.7% 0.237 25.331);
-    --color-yellow-500: oklch(79.5% 0.184 86.047);
-    --color-green-500: oklch(72.3% 0.219 149.579);
-    --color-blue-500: oklch(62.3% 0.214 259.815);
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
@@ -371,14 +367,17 @@
   .h-96 {
     height: calc(var(--spacing) * 96);
   }
+  .h-full {
+    height: 100%;
+  }
   .h-screen {
     height: 100vh;
   }
+  .max-h-\[700px\] {
+    max-height: 700px;
+  }
   .w-2\/3 {
     width: calc(2 / 3 * 100%);
-  }
-  .w-4\/5 {
-    width: calc(4 / 5 * 100%);
   }
   .w-28 {
     width: calc(var(--spacing) * 28);
@@ -478,15 +477,6 @@
   .bg-black {
     background-color: var(--color-black);
   }
-  .bg-blue-500 {
-    background-color: var(--color-blue-500);
-  }
-  .bg-green-500 {
-    background-color: var(--color-green-500);
-  }
-  .bg-red-500 {
-    background-color: var(--color-red-500);
-  }
   .bg-sports-dark-blue-10 {
     background-color: var(--color-sports-dark-blue-10);
   }
@@ -525,9 +515,6 @@
   }
   .bg-white {
     background-color: var(--color-white);
-  }
-  .bg-yellow-500 {
-    background-color: var(--color-yellow-500);
   }
   .bg-\[url\(https\:\/\/blocks\.astratic\.com\/img\/general-img-landscape\.png\)\] {
     background-image: url(https://blocks.astratic.com/img/general-img-landscape.png);
@@ -927,6 +914,18 @@ p, span, a, ul, ol {
 }
 .swiper-button-next-event, .swiper-button-next-gallery {
   right: 10px;
+}
+.swiperGallery .swiper-slide-next, .swiperGallery .swiper-slide-prev {
+  opacity: 0.5;
+  display: flex;
+  align-items: center;
+}
+.swiperGallery .swiper-slide-next .swiper-slide-content, .swiperGallery .swiper-slide-prev .swiper-slide-content {
+  height: 90%;
+  width: 100%;
+}
+.swiperGallery .swiper-slide {
+  height: auto;
 }
 @property --tw-translate-x {
   syntax: "*";
