@@ -11,6 +11,8 @@
     --color-white: #fff;
     --spacing: 0.25rem;
     --container-sm: 24rem;
+    --text-lg: 1.125rem;
+    --text-lg--line-height: calc(1.75 / 1.125);
     --text-xl: 1.25rem;
     --text-xl--line-height: calc(1.75 / 1.25);
     --text-2xl: 1.5rem;
@@ -35,6 +37,7 @@
     --color-sports-green-40: #99d1a9;
     --color-sports-green-20: #cce8d4;
     --color-sports-darker-yellow-100: #f09200;
+    --color-sports-darker-yellow-40: #f9d399;
     --color-sports-darker-yellow-20: #fce9cc;
     --color-sports-darker-yellow-10: #fdf4e5;
     --color-sports-purple-100: #6d2077;
@@ -241,6 +244,9 @@
   .col-span-1 {
     grid-column: span 1 / span 1;
   }
+  .col-span-2 {
+    grid-column: span 2 / span 2;
+  }
   .col-span-5 {
     grid-column: span 5 / span 5;
   }
@@ -349,8 +355,14 @@
   .h-1\/12 {
     height: calc(1 / 12 * 100%);
   }
+  .h-10 {
+    height: calc(var(--spacing) * 10);
+  }
   .h-10\/12 {
     height: calc(10 / 12 * 100%);
+  }
+  .h-20 {
+    height: calc(var(--spacing) * 20);
   }
   .h-24 {
     height: calc(var(--spacing) * 24);
@@ -461,6 +473,9 @@
   .overflow-y-hidden {
     overflow-y: hidden;
   }
+  .rounded {
+    border-radius: 0.25rem;
+  }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
   }
@@ -488,6 +503,9 @@
   }
   .bg-sports-darker-yellow-20 {
     background-color: var(--color-sports-darker-yellow-20);
+  }
+  .bg-sports-darker-yellow-100 {
+    background-color: var(--color-sports-darker-yellow-100);
   }
   .bg-sports-green-20 {
     background-color: var(--color-sports-green-20);
@@ -577,6 +595,10 @@
     font-size: var(--text-5xl) !important;
     line-height: var(--tw-leading, var(--text-5xl--line-height)) !important;
   }
+  .\!text-lg {
+    font-size: var(--text-lg) !important;
+    line-height: var(--tw-leading, var(--text-lg--line-height)) !important;
+  }
   .\!text-xl {
     font-size: var(--text-xl) !important;
     line-height: var(--tw-leading, var(--text-xl--line-height)) !important;
@@ -652,6 +674,20 @@
     &:hover {
       @media (hover: hover) {
         background-color: var(--color-sports-dark-blue-hover);
+      }
+    }
+  }
+  .hover\:bg-sports-darker-yellow-40 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-sports-darker-yellow-40);
+      }
+    }
+  }
+  .hover\:bg-sports-darker-yellow-100 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-sports-darker-yellow-100);
       }
     }
   }
