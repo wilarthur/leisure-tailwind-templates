@@ -126,7 +126,9 @@ ol {
 .swiper-button-next-event,
 .swiper-button-prev-event,
 .swiper-button-next-gallery,
-.swiper-button-prev-gallery {
+.swiper-button-prev-gallery,
+.swiper-button-next-membership,
+.swiper-button-prev-membership {
   position: absolute;
   top: 50%;
   width: calc(var(--swiper-navigation-size) / 44 * 27);
@@ -140,12 +142,14 @@ ol {
 }
 
 .swiper-button-prev-event,
-.swiper-button-prev-gallery {
+.swiper-button-prev-gallery,
+.swiper-button-prev-membership {
   left: 10px;
 }
 
 .swiper-button-next-event,
-.swiper-button-next-gallery {
+.swiper-button-next-gallery,
+.swiper-button-next-membership {
   right: 10px;
 }
 
