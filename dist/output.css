@@ -44,6 +44,7 @@
     --color-sports-darker-yellow-20: #fce9cc;
     --color-sports-darker-yellow-10: #fdf4e5;
     --color-sports-purple-100: #6d2077;
+    --color-sports-purple-40: #c5a6c9;
     --color-sports-purple-20: #e2d2ef;
     --color-sports-dark-blue-100: #012169;
     --color-sports-dark-blue-10: #e6e9f0;
@@ -544,6 +545,9 @@
   }
   .bg-sports-purple-20 {
     background-color: var(--color-sports-purple-20);
+  }
+  .bg-sports-purple-40 {
+    background-color: var(--color-sports-purple-40);
   }
   .bg-sports-purple-100 {
     background-color: var(--color-sports-purple-100);
