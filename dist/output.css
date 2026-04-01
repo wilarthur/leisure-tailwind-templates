@@ -510,6 +510,18 @@
     border-inline-style: var(--tw-border-style);
     border-inline-width: 1px;
   }
+  .\!border-t-\[1px\] {
+    border-top-style: var(--tw-border-style) !important;
+    border-top-width: 1px !important;
+  }
+  .border-b-\[1px\] {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 1px;
+  }
+  .border-solid {
+    --tw-border-style: solid;
+    border-style: solid;
+  }
   .bg-black {
     background-color: var(--color-black);
   }
@@ -575,9 +587,6 @@
   }
   .\!p-8 {
     padding: calc(var(--spacing) * 8) !important;
-  }
-  .p-5 {
-    padding: calc(var(--spacing) * 5);
   }
   .p-10 {
     padding: calc(var(--spacing) * 10);
@@ -985,6 +994,21 @@ p, span, a, ul, ol {
 .accordion.active {
   background-color: var(--color-sports-dark-blue-100);
   color: white;
+}
+.accordion-line {
+  cursor: pointer;
+  padding: 0.5rem;
+  width: 100%;
+  text-align: left;
+  border: unset;
+  outline: none;
+  transition: 0.4s;
+  display: flex;
+  align-items: center;
+}
+.accordion-line.active {
+  background-color: transparent;
+  color: inherit;
 }
 .accordion-panel {
   padding: 0 18px;
