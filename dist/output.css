@@ -332,9 +332,6 @@
   .\!mb-0 {
     margin-bottom: calc(var(--spacing) * 0) !important;
   }
-  .\!mb-1 {
-    margin-bottom: calc(var(--spacing) * 1) !important;
-  }
   .\!mb-2 {
     margin-bottom: calc(var(--spacing) * 2) !important;
   }
@@ -371,9 +368,6 @@
   .h-1\/12 {
     height: calc(1 / 12 * 100%);
   }
-  .h-5 {
-    height: calc(var(--spacing) * 5);
-  }
   .h-10 {
     height: calc(var(--spacing) * 10);
   }
@@ -409,9 +403,6 @@
   }
   .w-2\/3 {
     width: calc(2 / 3 * 100%);
-  }
-  .w-5 {
-    width: calc(var(--spacing) * 5);
   }
   .w-28 {
     width: calc(var(--spacing) * 28);
@@ -585,6 +576,9 @@
   .\!p-8 {
     padding: calc(var(--spacing) * 8) !important;
   }
+  .p-5 {
+    padding: calc(var(--spacing) * 5);
+  }
   .p-10 {
     padding: calc(var(--spacing) * 10);
   }
@@ -611,6 +605,9 @@
   }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
+  }
+  .py-5 {
+    padding-block: calc(var(--spacing) * 5);
   }
   .py-8 {
     padding-block: calc(var(--spacing) * 8);
