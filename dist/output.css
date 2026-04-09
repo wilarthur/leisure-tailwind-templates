@@ -37,6 +37,7 @@
     --color-sports-mid-blue-60: #66b0d0;
     --color-sports-mid-blue-40: #99cbdf;
     --color-sports-mid-blue-20: #cce5ef;
+    --color-sports-mid-blue-10: #e5f2f7;
     --color-sports-green-40: #99d1a9;
     --color-sports-green-20: #cce8d4;
     --color-sports-darker-yellow-100: #f09200;
@@ -47,6 +48,7 @@
     --color-sports-purple-40: #c5a6c9;
     --color-sports-purple-20: #e2d2ef;
     --color-sports-dark-blue-100: #012169;
+    --color-sports-dark-blue-20: #ccd3e1;
     --color-sports-dark-blue-10: #e6e9f0;
     --color-sports-dark-blue-hover: #001849;
     --color-sports-white-hover: #ccc;
@@ -553,6 +555,9 @@
   .bg-sports-dark-blue-10 {
     background-color: var(--color-sports-dark-blue-10);
   }
+  .bg-sports-dark-blue-20 {
+    background-color: var(--color-sports-dark-blue-20);
+  }
   .bg-sports-dark-blue-100 {
     background-color: var(--color-sports-dark-blue-100);
   }
@@ -573,6 +578,9 @@
   }
   .bg-sports-grey {
     background-color: var(--color-sports-grey);
+  }
+  .bg-sports-mid-blue-10 {
+    background-color: var(--color-sports-mid-blue-10);
   }
   .bg-sports-mid-blue-20 {
     background-color: var(--color-sports-mid-blue-20);
@@ -642,6 +650,9 @@
   }
   .py-5 {
     padding-block: calc(var(--spacing) * 5);
+  }
+  .py-6 {
+    padding-block: calc(var(--spacing) * 6);
   }
   .py-8 {
     padding-block: calc(var(--spacing) * 8);
