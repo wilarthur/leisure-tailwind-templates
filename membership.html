@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en" class="overflow-x-hidden">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership | Chelmsford City Sports</title>
+    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="stylesheet" href="https://use.typekit.net/lxk3dcf.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="dist/glightbox.min.css">
+    <script src="dist/glightbox.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="container mx-auto flex justify-between">
+            <a href=" /"><img class="max-w-sm" src="/img/CCC Our Chelmsford Landscape RGB.png" alt=""></a>
+            <button class="block lg:hidden" onclick="toggleMenu()"><i
+                    class="bi bi-list text-4xl mr-5 hover:cursor-pointer"></i></button>
+            <div id="desktop-menu" class="max-w-2/3 w-full my-auto hidden lg:block">
+                <ul class="flex justify-end my-5">
+                    <li
+                        class="bg-sports-dark-blue-100 text-white px-3 py-1 mx-3 rounded-full hover:bg-sports-dark-blue-hover">
+                        <a href="/">Join membership</a>
+                    </li>
+                    <li
+                        class="bg-sports-dark-blue-100 text-white px-3 py-1 mx-3 rounded-full hover:bg-sports-dark-blue-hover">
+                        <a href="/">Book
+                            activity</a>
+                    </li>
+                    <li
+                        class="bg-sports-dark-blue-100 text-white px-3 py-1 mx-3 rounded-full hover:bg-sports-dark-blue-hover">
+                        <a href="/">View
+                            prices</a>
+                    </li>
+                    <li
+                        class="bg-sports-dark-blue-100 text-white px-3 py-1 mx-3 rounded-full hover:bg-sports-dark-blue-hover">
+                        <a href="/">View
+                            timetables</a>
+                    </li>
+                </ul>
+                <ul class="flex justify-end my-5">
+                    <li class="mx-2 hover:underline"><a href="/">Activities</a></li>
+                    <li class="mx-2 hover:underline"><a href="/">Lessons</a></li>
+                    <li class="mx-2 hover:underline"><a href="/">Accessibility</a></li>
+                    <li class="mx-2 hover:underline"><a href="/">Location</a></li>
+                    <li class="mx-2 hover:underline"><a href="/">FAQs</a></li>
+                    <li class="mx-2 hover:underline"><a href="/">News</a></li>
+                    <li class="mx-2 hover:underline"><a href="/">Careers</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="mobile-menu"
+            class="bg-white block h-screen w-screen absolute left-0 top-0 z-50 transition duration-500 translate-x-full hidden">
+            <div class="h-1/12 container mx-auto mt-3 mb-5 flex justify-between items-center">
+                <a class="!mb-0" href="/"><img class="max-w-sm" src="/img/CCC Our Chelmsford Landscape RGB.png"
+                        alt=""></a>
+                <button onclick="toggleMenu()"><i class="bi bi-x text-5xl mr-5 hover:cursor-pointer"></i></button>
+            </div>
+            <div class="h-10/12 flex flex-col justify-between">
+                <div class="mx-10">
+                    <ul>
+                        <li class="mb-5 text-xl"><a href="/">Activities</a></li>
+                        <li class="mb-5 text-xl"><a href="/">Lessons</a></li>
+                        <li class="mb-5 text-xl"><a href="/">Courses</a></li>
+                        <li class="mb-5 text-xl"><a href="/">Accessibility</a></li>
+                        <li class="mb-5 text-xl"><a href="/">Location</a></li>
+                        <li class="mb-5 text-xl"><a href="/">FAQs</a></li>
+                        <li class="mb-5 text-xl"><a href="/">News</a></li>
+                        <li class="mb-5 text-xl"><a href="/">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="mx-10">
+                    <ul class="flex flex-col text-center">
+                        <li
+                            class="bg-sports-dark-blue-100 text-white px-3 py-2 rounded-full hover:bg-sports-dark-blue-hover mb-3">
+                            <a href="/">Join membership</a>
+                        </li>
+                        <li
+                            class="bg-sports-dark-blue-100 text-white px-3 py-2 rounded-full hover:bg-sports-dark-blue-hover mb-3">
+                            <a href="/">Book
+                                activity</a>
+                        </li>
+                        <li
+                            class="bg-sports-dark-blue-100 text-white px-3 py-2 rounded-full hover:bg-sports-dark-blue-hover mb-3">
+                            <a href="/">View
+                                prices</a>
+                        </li>
+                        <li
+                            class="bg-sports-dark-blue-100 text-white px-3 py-2 rounded-full hover:bg-sports-dark-blue-hover">
+                            <a href="/">View
+                                timetables</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section class="w-full bg-sports-grey py-6">
+            <div class="h-96 xl:h-[600px] bg-cover bg-center bg-no-repeat"
+                style="background-image: url(https://blocks.astratic.com/img/general-img-landscape.png);"></div>
+            <div
+                class="bg-sports-dark-blue-100 text-white container mx-auto text-center rounded-2xl -mt-20 p-10 xl:w-1/2">
+                <h1>Membership</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias asperiores omnis at error natus
+                    assumenda totam adipisci sint provident, fugiat libero odit animi ea sapiente et aliquid architecto
+                    corporis maxime.</p>
+            </div>
+        </section>
+        <section class="bg-sports-grey py-6">
+            <div class="container mx-auto px-5 lg:px-0 grid grid-cols-1 lg:grid-cols-10 gap-10 mb-12">
+                <div class="col-span-10 md:col-span-6">
+                    <h2>Benefits</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae perferendis, fuga, saepe qui
+                        suscipit dolor cum repudiandae a quibusdam nemo adipisci similique dolore dolores molestias?
+                        Iure eum itaque laborum sit!</p>
+                    <div class="flex"><a
+                            class="bg-black text-white px-4 py-1 mr-3 rounded-full hover:bg-sports-black-hover"
+                            href="/">CTA</a></div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-sports-grey py-6">
+            <div class="container mx-auto px-5 lg:px-0 grid grid-cols-1 lg:grid-cols-10 gap-10 mb-12">
+                <div class="col-span-10 md:col-span-5">
+                    <h3>Heading title</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae perferendis, fuga, saepe qui
+                        suscipit dolor cum repudiandae a quibusdam nemo adipisci similique dolore dolores molestias?
+                        Iure eum itaque laborum sit!</p>
+                    <div class="flex"><a
+                            class="bg-black text-white px-4 py-1 mr-3 rounded-full hover:bg-sports-black-hover"
+                            href="/">CTA</a></div>
+
+                </div>
+                <div class="col-span-10 md:col-span-5"><button
+                        class="accordion accordion-line !border-t-[1px] border-solid text-xl"><i
+                            class="bi bi-plus text-3xl mr-3"></i><i class="bi bi-dash text-3xl mr-3"
+                            style="display: none;"></i> Description
+                        heading</button>
+                    <div class="accordion-panel border-b-[1px] border-solid">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore
+                            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                            aliquip ex ea commodo
+                            consequat.</p>
+                    </div>
+                    <button class="accordion accordion-line text-xl"><i class="bi bi-plus text-3xl mr-3"></i><i
+                            class="bi bi-dash text-3xl mr-3" style="display: none;"></i> Description
+                        heading</button>
+                    <div class="accordion-panel border-b-[1px] border-solid">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore
+                            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                            aliquip ex ea commodo
+                            consequat.</p>
+                    </div>
+                    <button class="accordion accordion-line text-xl"><i class="bi bi-plus text-3xl mr-3"></i><i
+                            class="bi bi-dash text-3xl mr-3" style="display: none;"></i> Description
+                        heading</button>
+                    <div class="accordion-panel border-b-[1px] border-solid">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore
+                            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                            aliquip ex ea commodo
+                            consequat.</p>
+                    </div>
+                    <button class="accordion accordion-line text-xl"><i class="bi bi-plus text-3xl mr-3"></i><i
+                            class="bi bi-dash text-3xl mr-3" style="display: none;"></i> Description
+                        heading</button>
+                    <div class="accordion-panel border-b-[1px] border-solid">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore
+                            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                            aliquip ex ea commodo
+                            consequat.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-sports-mid-blue-20 py-6">
+            <div class="container mx-auto px-5 lg:px-0 grid grid-cols-1 lg:grid-cols-10 gap-10 my-5">
+                <div class="col-span-10 md:col-span-5"><img class="rounded-3xl mx-auto"
+                        src="https://blocks.astratic.com/img/general-img-landscape.png" alt="">
+                </div>
+                <div class="col-span-10 md:col-span-5">
+                    <h3>How to join</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae perferendis, fuga, saepe qui
+                        suscipit dolor cum repudiandae a quibusdam nemo adipisci similique dolore dolores molestias?
+                        Iure eum itaque laborum sit!</p>
+                    <div class="flex"><a
+                            class="bg-black text-white px-4 py-1 mr-3 rounded-full hover:bg-sports-black-hover"
+                            href="/">Terms and conditions</a><a
+                            class="bg-black text-white px-4 py-1 mr-3 rounded-full hover:bg-sports-black-hover"
+                            href="/">Join online now</a></div>
+                </div>
+
+            </div>
+
+        </section>
+        <section class="bg-sports-dark-blue-100 text-white py-6">
+            <div class="container mx-auto px-5 md:px-0 grid grid-cols-10">
+                <div class="col-start-1 lg:col-start-3 col-span-10 lg:col-span-4">
+                    <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ducimus necessitatibus vero
+                        ipsum?
+                        Voluptate quibusdam neque, fuga expedita temporibus veniam architecto animi optio corporis
+                        soluta.
+                        Magnam corrupti explicabo delectus distinctio.</p>
+                </div>
+                <div class="col-span-10 lg:col-span-2 flex justify-center items-center">
+                    <div class="grid grid-cols-3 grid-rows-2 gap-x-5 mt-10">
+                        <span id="countdownDays" class="!text-5xl text-center mt-auto !mb-0">
+
+                        </span>
+                        <span id="countdownHours" class="!text-5xl text-center mt-auto !mb-0">
+
+                        </span>
+                        <span id="countdownMinutes" class="!text-5xl text-center mt-auto !mb-0">
+
+                        </span>
+                        <span class="text-center">Days</span>
+                        <span class="text-center">Hours</span>
+                        <span class="text-center">Minutes</span>
+                    </div>
+                    <div id="countdownTimer"></div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-sports-grey py-6">
+            <div class="container mx-auto">
+                <span class="text-center block mx-auto lg:w-2/3">
+                    <h3>Membership plans</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia repellendus impedit accusamus,
+                        molestias vitae veniam officiis eveniet quisquam adipisci voluptatibus vero molestiae
+                        consequuntur
+                        praesentium sed quae in voluptatem labore nisi.</p>
+                    <div class="grid lg:grid-cols-4 grid-cols-1 lg:mx-0 mx-10 my-10"><a
+                            class="bg-black border-2 border-black text-white px-4 py-1 mr-3 rounded-full hover:bg-sports-black-hover"
+                            href="/">Anytime memberships</a><a
+                            class="bg-white border-2 border-black text-black px-4 py-1 mr-3 rounded-full hover:bg-sports-white-hover"
+                            href="/">Off peak memberships</a> <a
+                            class="bg-white border-2 border-black text-black px-4 py-1 mr-3 rounded-full hover:bg-sports-white-hover"
+                            href="/">Family memberships</a> <a
+                            class="bg-white border-2 border-black text-black px-4 py-1 mr-3 rounded-full hover:bg-sports-white-hover"
+                            href="/">Other memberships</a></div>
+                </span>
+
+                <div class="grid lg:grid-cols-2 lg:mx-0 mx-5  grid-cols-1 gap-10">
+                    <div class="bg-white rounded-3xl !p-8">
+                        <h3>Membership option</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Provident eaque
+                            laborum
+                            quo?
+                            Quo
+                            optio ratione rerum laudantium, unde excepturi, id magni ullam reiciendis
+                            facere
+                            blanditiis, quod iste a omnis nemo.</p>
+                        <ul>
+                            <li class="flex items-center mb-3"><i class="bi bi-star mr-5 text-xl"></i>
+                                Lorem
+                                ipsum dolor
+                                sit, amet
+                                consectetur
+                                adipisicing elit.</li>
+                            <li class="flex items-center mb-3"><i class="bi bi-star mr-5 text-xl"></i>
+                                Lorem
+                                ipsum dolor
+                                sit, amet
+                                consectetur
+                                adipisicing elit.</li>
+                            <li class="flex items-center mb-3"><i class="bi bi-star mr-5 text-xl"></i>
+                                Lorem
+                                ipsum dolor
+                                sit, amet
+                                consectetur
+                                adipisicing elit.</li>
+                            <li class="flex items-center mb-3"><i class="bi bi-star mr-5 text-xl"></i>
+                                Lorem
+                                ipsum dolor
+                                sit, amet
+                                consectetur
+                                adipisicing elit.</li>
+                            <li class="flex items-center mb-3"><i class="bi bi-star mr-5 text-xl"></i>
+                                Lorem
+                                ipsum dolor
+                                sit, amet
+                                consectetur
+                                adipisicing elit.</li>
+                            <li class="flex items-center mb-3"><i class="bi bi-star mr-5 text-xl"></i>
+                                Lorem
+                                ipsum dolor
+                                sit, amet
+                                consectetur
+                                adipisicing elit.</li>
+                            <li class="flex items-center mb-3"><i class="bi bi-star mr-5 text-xl"></i>
+                                Lorem
+                                ipsum dolor
+                                sit, amet
+                                consectetur
+                                adipisicing elit.</li>
+                        </ul>
+                        <hr class="my-2 border-0 h-[2px] bg-black">
+                        <div class="flex justify-around">
+                            <p class="flex flex-col items-center !text-2xl">£XX.XX<span
+                                    class="!text-base">Annually</span>
+                            </p>
+                            <span class="border-x-[1px]"></span>
+                            <p class="flex flex-col items-center !text-2xl">£XX.XX<span
+                                    class="!text-base">Annually</span>
+                            </p>
+                        </div>
+                        <div class=""><a
+                                class="bg-black text-white px-4 py-1 mr-3 block !text-xl text-center rounded-full hover:bg-sports-black-hover"
+                                href="/">CTA</a></div>
+                    </div>
+                    <div class="bg-white rounded-3xl !p-8">
+                        <h3>Membership option</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Provident eaque
+                            laborum
+                            quo?
+                            Quo
+                            optio ratione rerum laudantium, unde excepturi, id magni ullam reiciendis
+                            facere
+                            blanditiis, quod iste a omnis nemo.</p>
+                        <ul>
+                            <li class="flex items-center mb-3"><i class="bi bi-star mr-5 text-xl"></i>
+                                Lorem
+                                ipsum dolor
+                                sit, amet
+                                consectetur
+                                adipisicing elit.</li>
+                            <li class="flex items-center mb-3"><i class="bi bi-star mr-5 text-xl"></i>
+                                Lorem
+                                ipsum dolor
+                                sit, amet
+                                consectetur
+                                adipisicing elit.</li>
+                            <li class="flex items-center mb-3"><i class="bi bi-star mr-5 text-xl"></i>
+                                Lorem
+                                ipsum dolor
+                                sit, amet
+                                consectetur
+                                adipisicing elit.</li>
+                            <li class="flex items-center mb-3"><i class="bi bi-star mr-5 text-xl"></i>
+                                Lorem
+                                ipsum dolor
+                                sit, amet
+                                consectetur
+                                adipisicing elit.</li>
+                            <li class="flex items-center mb-3"><i class="bi bi-star mr-5 text-xl"></i>
+                                Lorem
+                                ipsum dolor
+                                sit, amet
+                                consectetur
+                                adipisicing elit.</li>
+                            <li class="flex items-center mb-3"><i class="bi bi-star mr-5 text-xl"></i>
+                                Lorem
+                                ipsum dolor
+                                sit, amet
+                                consectetur
+                                adipisicing elit.</li>
+                            <li class="flex items-center mb-3"><i class="bi bi-star mr-5 text-xl"></i>
+                                Lorem
+                                ipsum dolor
+                                sit, amet
+                                consectetur
+                                adipisicing elit.</li>
+                        </ul>
+                        <hr class="my-2 border-0 h-[2px] bg-black">
+                        <div class="flex justify-around">
+                            <p class="flex flex-col items-center !text-2xl">£XX.XX<span
+                                    class="!text-base">Annually</span>
+                            </p>
+                            <span class="border-x-[1px]"></span>
+                            <p class="flex flex-col items-center !text-2xl">£XX.XX<span
+                                    class="!text-base">Annually</span>
+                            </p>
+                        </div>
+                        <div class=""><a
+                                class="bg-black text-white px-4 py-1 mr-3 block !text-xl text-center rounded-full hover:bg-sports-black-hover"
+                                href="/">CTA</a></div>
+                    </div>
+                    <div class="bg-white rounded-3xl !p-8">
+                        <h3>Membership option</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Provident eaque
+                            laborum
+                            quo?
+                            Quo
+                            optio ratione rerum laudantium, unde excepturi, id magni ullam reiciendis
+                            facere
+                            blanditiis, quod iste a omnis nemo.</p>
+                        <ul>
+                            <li class="flex items-center mb-3"><i class="bi bi-star mr-5 text-xl"></i>
+                                Lorem
+                                ipsum dolor
+                                sit, amet
+                                consectetur
+                                adipisicing elit.</li>
+                            <li class="flex items-center mb-3"><i class="bi bi-star mr-5 text-xl"></i>
+                                Lorem
+                                ipsum dolor
+                                sit, amet
+                                consectetur
+                                adipisicing elit.</li>
+                            <li class="flex items-center mb-3"><i class="bi bi-star mr-5 text-xl"></i>
+                                Lorem
+                                ipsum dolor
+                                sit, amet
+                                consectetur
+                                adipisicing elit.</li>
+                            <li class="flex items-center mb-3"><i class="bi bi-star mr-5 text-xl"></i>
+                                Lorem
+                                ipsum dolor
+                                sit, amet
+                                consectetur
+                                adipisicing elit.</li>
+                            <li class="flex items-center mb-3"><i class="bi bi-star mr-5 text-xl"></i>
+                                Lorem
+                                ipsum dolor
+                                sit, amet
+                                consectetur
+                                adipisicing elit.</li>
+                            <li class="flex items-center mb-3"><i class="bi bi-star mr-5 text-xl"></i>
+                                Lorem
+                                ipsum dolor
+                                sit, amet
+                                consectetur
+                                adipisicing elit.</li>
+                            <li class="flex items-center mb-3"><i class="bi bi-star mr-5 text-xl"></i>
+                                Lorem
+                                ipsum dolor
+                                sit, amet
+                                consectetur
+                                adipisicing elit.</li>
+                        </ul>
+                        <hr class="my-2 border-0 h-[2px] bg-black">
+                        <div class="flex justify-around">
+                            <p class="flex flex-col items-center !text-2xl">£XX.XX<span
+                                    class="!text-base">Annually</span>
+                            </p>
+                            <span class="border-x-[1px]"></span>
+                            <p class="flex flex-col items-center !text-2xl">£XX.XX<span
+                                    class="!text-base">Annually</span>
+                            </p>
+                        </div>
+                        <div class=""><a
+                                class="bg-black text-white px-4 py-1 mr-3 block !text-xl text-center rounded-full hover:bg-sports-black-hover"
+                                href="/">CTA</a></div>
+                    </div>
+                    <div class="bg-white rounded-3xl !p-8">
+                        <h3>Membership option</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Provident eaque
+                            laborum
+                            quo?
+                            Quo
+                            optio ratione rerum laudantium, unde excepturi, id magni ullam reiciendis
+                            facere
+                            blanditiis, quod iste a omnis nemo.</p>
+                        <ul>
+                            <li class="flex items-center mb-3"><i class="bi bi-star mr-5 text-xl"></i>
+                                Lorem
+                                ipsum dolor
+                                sit, amet
+                                consectetur
+                                adipisicing elit.</li>
+                            <li class="flex items-center mb-3"><i class="bi bi-star mr-5 text-xl"></i>
+                                Lorem
+                                ipsum dolor
+                                sit, amet
+                                consectetur
+                                adipisicing elit.</li>
+                            <li class="flex items-center mb-3"><i class="bi bi-star mr-5 text-xl"></i>
+                                Lorem
+                                ipsum dolor
+                                sit, amet
+                                consectetur
+                                adipisicing elit.</li>
+                            <li class="flex items-center mb-3"><i class="bi bi-star mr-5 text-xl"></i>
+                                Lorem
+                                ipsum dolor
+                                sit, amet
+                                consectetur
+                                adipisicing elit.</li>
+                            <li class="flex items-center mb-3"><i class="bi bi-star mr-5 text-xl"></i>
+                                Lorem
+                                ipsum dolor
+                                sit, amet
+                                consectetur
+                                adipisicing elit.</li>
+                            <li class="flex items-center mb-3"><i class="bi bi-star mr-5 text-xl"></i>
+                                Lorem
+                                ipsum dolor
+                                sit, amet
+                                consectetur
+                                adipisicing elit.</li>
+                            <li class="flex items-center mb-3"><i class="bi bi-star mr-5 text-xl"></i>
+                                Lorem
+                                ipsum dolor
+                                sit, amet
+                                consectetur
+                                adipisicing elit.</li>
+                        </ul>
+                        <hr class="my-2 border-0 h-[2px] bg-black">
+                        <div class="flex justify-around">
+                            <p class="flex flex-col items-center !text-2xl">£XX.XX<span
+                                    class="!text-base">Annually</span>
+                            </p>
+                            <span class="border-x-[1px]"></span>
+                            <p class="flex flex-col items-center !text-2xl">£XX.XX<span
+                                    class="!text-base">Annually</span>
+                            </p>
+                        </div>
+                        <div class=""><a
+                                class="bg-black text-white px-4 py-1 mr-3 block !text-xl text-center rounded-full hover:bg-sports-black-hover"
+                                href="/">CTA</a></div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+        <footer class="bg-sports-dark-blue-100 py-12">
+            <div class="container mx-auto px-5 md:px-0">
+                <div class="grid grid-cols-2 md:grid-cols-5 text-white">
+                    <div class="flex flex-col max-w-1/2">
+                        <div class="h-24 flex items-end"><img class="mb-5" src="/img/Riverside_logo_cropped.png">
+                        </div>
+                        <p><a href="/">T: 0134567890</a></p>
+                        <div class="flex"><a class="mr-3" href="/"><i class="bi bi-facebook text-2xl"></i></a><a
+                                class="mr-3" href="/"><i class="bi bi-instagram text-2xl"></i></a><a class="mr-3"
+                                href="/"><i class="bi bi-youtube text-2xl"></i></a></div>
+                    </div>
+                    <div class="flex flex-col max-w-1/2">
+                        <div class="h-24 flex items-end"><img class="mb-5" src="/img/CSAC_logo_cropped.png"></div>
+                        <p><a href="/">T: 0134567890</a></p>
+                        <div class="flex"><a class="mr-3" href="/"><i class="bi bi-facebook text-2xl"></i></a><a
+                                class="mr-3" href="/"><i class="bi bi-instagram text-2xl"></i></a><a class="mr-3"
+                                href="/"><i class="bi bi-youtube text-2xl"></i></a></div>
+                    </div>
+                    <div class="flex flex-col max-w-1/2">
+                        <div class="h-24 flex items-end"><img class="mb-5" src="/img/SWFLC_logo_cropped.png"></div>
+                        <p><a href="/">T: 0134567890</a></p>
+                        <div class="flex"><a class="mr-3" href="/"><i class="bi bi-facebook text-2xl"></i></a><a
+                                class="mr-3" href="/"><i class="bi bi-instagram text-2xl"></i></a><a class="mr-3"
+                                href="/"><i class="bi bi-youtube text-2xl"></i></a></div>
+                    </div>
+                    <div class="flex flex-col max-w-1/2">
+                        <div class="h-24 flex items-end"><img class="mb-5" src="img/Dovedale_logo_cropped.png">
+                        </div>
+                        <p><a href="/">T: 0134567890</a></p>
+                        <div class="flex"><a class="mr-3" href="/"><i class="bi bi-facebook text-2xl"></i></a><a
+                                class="mr-3" href="/"><i class="bi bi-instagram text-2xl"></i></a><a class="mr-3"
+                                href="/"><i class="bi bi-youtube text-2xl"></i></a></div>
+                    </div>
+                    <div>
+                        <p><a href="/">About</a></p>
+                        <p><a href="/">Careers</a></p>
+                        <p><a href="/">Contact</a></p>
+                        <p><a href="/">Testimonials</a></p>
+                        <div class="flex"><a class="mr-3" href="/"><i class="bi bi-facebook text-2xl"></i></a><a
+                                class="mr-3" href="/"><i class="bi bi-instagram text-2xl"></i></a><a class="mr-3"
+                                href="/"><i class="bi bi-youtube text-2xl"></i></a>
+                        </div>
+                        <p><a class="bg-white text-black px-5 py-2 rounded-full font-bold hover:bg-sports-white-hover"
+                                href="/">Join today</a></p>
+                    </div>
+                </div>
+                <div class="flex justify-between text-white pt-12">
+                    <div class="grid grid-cols-3 grid-rows-2"><a href="/">Cookie Policy</a><a href="/">Privacy
+                            Policy</a><a href="/">Cancellation & Refund Policy</a><a href="/">Complaints
+                            Policy</a><a href="/">Accessibility statement</a><a href="/">Terms and conditions</a>
+                    </div>
+
+                    <div>
+                        <a class="inline-block" href="/">Lottery funded logo</a>
+                        <a class="inline-block w-28" href="/"><img
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/250px-Google_Play_Store_badge_EN.svg.png"
+                                alt=""></a>
+                        <a class="inline-block w-28" href="/"><img
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Download_on_the_App_Store_RGB_blk.svg/250px-Download_on_the_App_Store_RGB_blk.svg.png"
+                                alt=""></a>
+                        <a class="inline-block" href="/">Chelmsford City Sports logo</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper - reviews -->
+    <script>
+        var swiper = new Swiper(".swiperReviews", {
+            spaceBetween: 30,
+            navigation: {
+                nextEl: ".swiper-button-next-custom",
+                prevEl: ".swiper-button-prev-custom",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 1,
+                },
+                768: {
+                    slidesPerView: 2,
+                },
+                1024: {
+                    slidesPerView: 3,
+                },
+            },
+            mousewheel: false,
+            keyboard: true,
+        });
+    </script>
+    <!-- Initialize Swiper - events -->
+    <script>
+        var swiper = new Swiper(".swiperEvents", {
+            spaceBetween: 0,
+            navigation: {
+                nextEl: ".swiper-button-next-event",
+                prevEl: ".swiper-button-prev-event",
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 1,
+                },
+                768: {
+                    slidesPerView: 2,
+                },
+                1024: {
+                    slidesPerView: 3,
+                },
+            },
+            mousewheel: false,
+            keyboard: true,
+        });
+    </script>
+    <!-- Initialize Swiper - gallery -->
+    <script>
+        var swiper = new Swiper(".swiperGallery", {
+            slidesPerView: 1.2,
+            centeredSlides: true,
+            spaceBetween: 50,
+            loop: true,
+            navigation: {
+                nextEl: ".swiper-button-next-gallery",
+                prevEl: ".swiper-button-prev-gallery",
+            },
+            mousewheel: false,
+            keyboard: true,
+        });
+    </script>
+    <!-- Countdown timer -->
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("May 1, 2026 00:00:00").getTime();
+
+        var x = setInterval(function () {
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Output the result in an element
+            document.getElementById("countdownDays").innerHTML = days;
+            document.getElementById("countdownHours").innerHTML = hours;
+            document.getElementById("countdownMinutes").innerHTML = minutes;
+
+            // If the count down is over, write some text
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countdownTimer").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+    </script>
+    <!-- Accordions -->
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                var plus = this.querySelector(".bi-plus")
+                var minus = this.querySelector(".bi-dash")
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                    plus.style.display = "block";
+                    minus.style.display = "none";
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                    plus.style.display = "none";
+                    minus.style.display = "block"
+                }
+            });
+        }
+    </script>
+    <!-- Initialize glightbox -->
+    <script>
+        const lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+        });
+    </script>
+
+    <script src="/dist/script.js"></script>
+</body>
+
+
+
+</html>
