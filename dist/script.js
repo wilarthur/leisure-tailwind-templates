@@ -18,3 +18,28 @@ function toggleMenu() {
     }, 500);
   }
 }
+
+/* Swiper - reviews */
+var swiper = new Swiper(".swiperReviews", {
+  spaceBetween: 30,
+  navigation: {
+    nextEl: ".swiper-button-next-custom",
+    prevEl: ".swiper-button-prev-custom",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
+  },
+  mousewheel: false,
+  keyboard: true,
+});
