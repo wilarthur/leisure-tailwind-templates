@@ -87,3 +87,17 @@ var swiper = new Swiper(".swiperMembership", {
   mousewheel: false,
   keyboard: true,
 });
+
+/* Swiper - gallery */
+var swiper = new Swiper(".swiperGallery", {
+  slidesPerView: 1.4,
+  centeredSlides: true,
+  spaceBetween: 50,
+  loop: true,
+  navigation: {
+    nextEl: ".swiper-button-next-gallery",
+    prevEl: ".swiper-button-prev-gallery",
+  },
+  mousewheel: false,
+  keyboard: true,
+});

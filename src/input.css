@@ -170,6 +170,36 @@ ol {
   right: 10px;
 }
 
+@media (min-width: 1536px) {
+  .swiper-button-prev-gallery {
+    left: calc(var(--swiper-navigation-size) * 4.25);
+  }
+
+  .swiper-button-next-gallery {
+    right: calc(var(--swiper-navigation-size) * 4.25);
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1535px) {
+  .swiper-button-prev-gallery {
+    left: calc(var(--swiper-navigation-size) * 3.5);
+  }
+
+  .swiper-button-next-gallery {
+    right: calc(var(--swiper-navigation-size) * 3.5);
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .swiper-button-prev-gallery {
+    left: calc(var(--swiper-navigation-size) * 2.65);
+  }
+
+  .swiper-button-next-gallery {
+    right: calc(var(--swiper-navigation-size) * 2.65);
+  }
+}
+
 /* Swiper gallery */
 .swiperGallery .swiper-slide-next,
 .swiperGallery .swiper-slide-prev {
