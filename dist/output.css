@@ -709,11 +709,17 @@
   .\!p-8 {
     padding: calc(var(--spacing) * 8) !important;
   }
+  .p-0 {
+    padding: calc(var(--spacing) * 0);
+  }
   .p-10 {
     padding: calc(var(--spacing) * 10);
   }
   .p-12 {
     padding: calc(var(--spacing) * 12);
+  }
+  .px-0 {
+    padding-inline: calc(var(--spacing) * 0);
   }
   .px-3 {
     padding-inline: calc(var(--spacing) * 3);
@@ -910,6 +916,27 @@
     &:hover {
       @media (hover: hover) {
         background-color: var(--color-sports-darker-yellow-100);
+      }
+    }
+  }
+  .hover\:bg-sports-green-40 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-sports-green-40);
+      }
+    }
+  }
+  .hover\:bg-sports-mid-blue-40 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-sports-mid-blue-40);
+      }
+    }
+  }
+  .hover\:bg-sports-purple-40 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-sports-purple-40);
       }
     }
   }
