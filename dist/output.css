@@ -1225,10 +1225,10 @@ p, span, a, ul, ol {
   align-items: center;
   justify-content: center;
 }
-.swiper-button-prev-event, .swiper-button-prev-gallery, .swiper-button-prev-membership {
+.swiper-button-prev-event, .swiper-button-prev-membership {
   left: 10px;
 }
-.swiper-button-next-event, .swiper-button-next-gallery, .swiper-button-next-membership {
+.swiper-button-next-event, .swiper-button-next-membership {
   right: 10px;
 }
 @media (min-width: 1536px) {
@@ -1253,6 +1253,22 @@ p, span, a, ul, ol {
   }
   .swiper-button-next-gallery {
     right: calc(var(--swiper-navigation-size) * 2.65);
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .swiper-button-prev-gallery {
+    left: calc(var(--swiper-navigation-size) * 1.75);
+  }
+  .swiper-button-next-gallery {
+    right: calc(var(--swiper-navigation-size) * 1.75);
+  }
+}
+@media (max-width: 767px) {
+  .swiper-button-prev-gallery {
+    left: 7.5vw;
+  }
+  .swiper-button-next-gallery {
+    right: 7.5vw;
   }
 }
 .swiperGallery .swiper-slide-next, .swiperGallery .swiper-slide-prev {
