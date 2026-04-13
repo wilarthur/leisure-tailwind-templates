@@ -745,6 +745,9 @@
   .pb-6 {
     padding-bottom: calc(var(--spacing) * 6);
   }
+  .pb-10 {
+    padding-bottom: calc(var(--spacing) * 10);
+  }
   .pb-12 {
     padding-bottom: calc(var(--spacing) * 12);
   }
@@ -760,6 +763,14 @@
   .\!text-2xl {
     font-size: var(--text-2xl) !important;
     line-height: var(--tw-leading, var(--text-2xl--line-height)) !important;
+  }
+  .\!text-3xl {
+    font-size: var(--text-3xl) !important;
+    line-height: var(--tw-leading, var(--text-3xl--line-height)) !important;
+  }
+  .\!text-4xl {
+    font-size: var(--text-4xl) !important;
+    line-height: var(--tw-leading, var(--text-4xl--line-height)) !important;
   }
   .\!text-5xl {
     font-size: var(--text-5xl) !important;
@@ -1118,6 +1129,18 @@
   .lg\:px-40 {
     @media (width >= 64rem) {
       padding-inline: calc(var(--spacing) * 40);
+    }
+  }
+  .lg\:\!text-6xl {
+    @media (width >= 64rem) {
+      font-size: var(--text-6xl) !important;
+      line-height: var(--tw-leading, var(--text-6xl--line-height)) !important;
+    }
+  }
+  .lg\:\!text-8xl {
+    @media (width >= 64rem) {
+      font-size: var(--text-8xl) !important;
+      line-height: var(--tw-leading, var(--text-8xl--line-height)) !important;
     }
   }
   .xl\:h-\[600px\] {
