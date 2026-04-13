@@ -65,3 +65,25 @@ var swiper = new Swiper(".swiperEvents", {
   mousewheel: false,
   keyboard: true,
 });
+
+/* Swiper - membership */
+var swiper = new Swiper(".swiperMembership", {
+  spaceBetween: 0,
+  navigation: {
+    nextEl: ".swiper-button-next-membership",
+    prevEl: ".swiper-button-prev-membership",
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
+  },
+  mousewheel: false,
+  keyboard: true,
+});
