@@ -43,3 +43,25 @@ var swiper = new Swiper(".swiperReviews", {
   mousewheel: false,
   keyboard: true,
 });
+
+/* Swiper - events */
+var swiper = new Swiper(".swiperEvents", {
+  spaceBetween: 0,
+  navigation: {
+    nextEl: ".swiper-button-next-event",
+    prevEl: ".swiper-button-prev-event",
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
+  },
+  mousewheel: false,
+  keyboard: true,
+});
