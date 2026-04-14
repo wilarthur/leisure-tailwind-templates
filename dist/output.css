@@ -443,6 +443,9 @@
   .w-2\/3 {
     width: calc(2 / 3 * 100%);
   }
+  .w-10 {
+    width: calc(var(--spacing) * 10);
+  }
   .w-28 {
     width: calc(var(--spacing) * 28);
   }
@@ -612,6 +615,9 @@
   }
   .bg-sports-dark-blue-100 {
     background-color: var(--color-sports-dark-blue-100);
+  }
+  .bg-sports-dark-blue-hover {
+    background-color: var(--color-sports-dark-blue-hover);
   }
   .bg-sports-darker-yellow-10 {
     background-color: var(--color-sports-darker-yellow-10);
