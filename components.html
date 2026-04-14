@@ -44,7 +44,7 @@
                             timetables</a>
                     </li>
                 </ul>
-                <ul class="flex justify-end items-center my-5">
+                <ul class="flex flex-wrap justify-end items-center my-5">
                     <li class="mx-2 hover:underline"><a href="/">Activities</a></li>
                     <li class="mx-2 hover:underline"><a href="/">Lessons</a></li>
                     <li class="mx-2 hover:underline"><a href="/">Accessibility</a></li>
@@ -52,9 +52,18 @@
                     <li class="mx-2 hover:underline"><a href="/">FAQs</a></li>
                     <li class="mx-2 hover:underline"><a href="/">News</a></li>
                     <li class="mx-2 hover:underline"><a href="/">Careers</a></li>
-                    <li class="mx-2"><button
-                            class="bg-sports-dark-blue-100 hover:bg-sports-dark-blue-hover text-white w-10 h-10 rounded-full cursor-pointer"><i
-                                class="bi bi-search"></button></i>
+                    <li class="mx-2 my-5 xl:my-0">
+
+                        <form action="">
+                            <input id="search-bar"
+                                class="border-2 border-sports-dark-blue-100 h-10 -mr-10 w-10 rounded-full transition-all ease-in-out"
+                                type="search"><button id="open-search" onclick="toggleSearch()" type="button"
+                                class="bg-sports-dark-blue-100 hover:bg-sports-dark-blue-hover text-white w-10 h-10 rounded-full cursor-pointer"><i
+                                    class="bi bi-search"></i></button>
+                            <button id="submit-search" type="submit"
+                                class="bg-sports-dark-blue-100 hover:bg-sports-dark-blue-hover text-white w-10 h-10 rounded-full cursor-pointer hidden"><i
+                                    class="bi bi-search"></i></button>
+                        </form>
                     </li>
                 </ul>
             </div>

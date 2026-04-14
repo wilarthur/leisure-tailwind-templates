@@ -19,6 +19,28 @@ function toggleMenu() {
   }
 }
 
+/* Search bar */
+
+function toggleSearch() {
+  const searchBar = document.getElementById("search-bar");
+  const openSearch = document.getElementById("open-search");
+  const submitSearch = document.getElementById("submit-search");
+
+  if (searchBar.classList.contains("w-72")) {
+    searchBar.classList.toggle("w-72");
+    searchBar.classList.toggle("w-10");
+    searchBar.classList.toggle("px-5");
+    openSearch.classList.toggle("hidden");
+    submitSearch.classList.toggle("hidden");
+  } else {
+    searchBar.classList.toggle("w-10");
+    searchBar.classList.toggle("w-72");
+    searchBar.classList.toggle("px-5");
+    openSearch.classList.toggle("hidden");
+    submitSearch.classList.toggle("hidden");
+  }
+}
+
 /* Accordions */
 
 var acc = document.getElementsByClassName("accordion");
