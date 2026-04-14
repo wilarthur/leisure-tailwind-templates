@@ -1057,9 +1057,110 @@
     </section>
     <hr>
     <h1>Countdown timer</h1>
+    <p class="font-bold">- Section BG colour can be chosen from palette</p>
+    <p class="font-bold">- Stopwatch icon can be toggled</p>
+    <p class="font-bold">- Choice of two widths available</p>
+    <p class="font-bold">- Current implementation is limited to 1 timer per page</p>
+    <p class="font-bold">- Current implementation requires inline script to be added when module is present. Umbraco
+        must be able to edit script values</p>
     <hr>
-    
+    <section class="bg-sports-yellow py-6">
+        <div class="container mx-auto px-5 md:px-0 mb-12 grid grid-cols-5">
+            <div class="col-span-5 lg:col-span-3">
+                <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ducimus necessitatibus vero
+                    ipsum?
+                    Voluptate quibusdam neque, fuga expedita temporibus veniam architecto animi optio corporis
+                    soluta.
+                    Magnam corrupti explicabo delectus distinctio.</p>
+            </div>
+            <div class="col-span-5 lg:col-span-2 flex justify-center items-center"><i
+                    class="bi bi-stopwatch text-9xl mr-5"></i>
+                <div class="grid grid-cols-3 grid-rows-2 gap-x-5 mt-10">
+                    <span id="countdownDays" class="!text-5xl text-center mt-auto !mb-0">
 
+                    </span>
+                    <span id="countdownHours" class="!text-5xl text-center mt-auto !mb-0">
+
+                    </span>
+                    <span id="countdownMinutes" class="!text-5xl text-center mt-auto !mb-0">
+
+                    </span>
+                    <span class="text-center">Days</span>
+                    <span class="text-center">Hours</span>
+                    <span class="text-center">Minutes</span>
+                </div>
+                <div id="countdownTimer"></div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-sports-dark-blue-100 text-white py-6">
+        <div class="container mx-auto px-5 md:px-0 grid grid-cols-10">
+            <div class="col-start-1 lg:col-start-3 col-span-10 lg:col-span-4">
+                <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ducimus necessitatibus vero
+                    ipsum?
+                    Voluptate quibusdam neque, fuga expedita temporibus veniam architecto animi optio corporis
+                    soluta.
+                    Magnam corrupti explicabo delectus distinctio.</p>
+            </div>
+            <div class="col-span-10 lg:col-span-2 flex justify-center items-center">
+                <div class="grid grid-cols-3 grid-rows-2 gap-x-5 mt-10">
+                    <span id="countdownDays" class="!text-5xl text-center mt-auto !mb-0">
+
+                    </span>
+                    <span id="countdownHours" class="!text-5xl text-center mt-auto !mb-0">
+
+                    </span>
+                    <span id="countdownMinutes" class="!text-5xl text-center mt-auto !mb-0">
+
+                    </span>
+                    <span class="text-center">Days</span>
+                    <span class="text-center">Hours</span>
+                    <span class="text-center">Minutes</span>
+                </div>
+                <div id="countdownTimer"></div>
+            </div>
+        </div>
+    </section>
+    <!-- Countdown timer -->
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("May 1, 2026 00:00:00").getTime();
+
+        var x = setInterval(function () {
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Output the result in an element
+            document.getElementById("countdownDays").innerHTML = days;
+            document.getElementById("countdownHours").innerHTML = hours;
+            document.getElementById("countdownMinutes").innerHTML = minutes;
+
+            // If the count down is over, write some text
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countdownTimer").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+    </script>
+    <hr>
+    <h1></h1>
+    <hr>
+
+
+    
 </body>
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script src="/dist/script.js"></script>
