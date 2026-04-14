@@ -267,6 +267,9 @@
   .col-span-10 {
     grid-column: span 10 / span 10;
   }
+  .col-span-12 {
+    grid-column: span 12 / span 12;
+  }
   .col-start-1 {
     grid-column-start: 1;
   }
@@ -981,6 +984,11 @@
       grid-column: span 6 / span 6;
     }
   }
+  .md\:col-span-8 {
+    @media (width >= 48rem) {
+      grid-column: span 8 / span 8;
+    }
+  }
   .md\:row-span-1 {
     @media (width >= 48rem) {
       grid-row: span 1 / span 1;
@@ -1141,6 +1149,11 @@
   .lg\:grid-cols-10 {
     @media (width >= 64rem) {
       grid-template-columns: repeat(10, minmax(0, 1fr));
+    }
+  }
+  .lg\:grid-cols-12 {
+    @media (width >= 64rem) {
+      grid-template-columns: repeat(12, minmax(0, 1fr));
     }
   }
   .lg\:flex-row {
