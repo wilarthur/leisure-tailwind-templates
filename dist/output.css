@@ -294,6 +294,9 @@
   .\!m-0 {
     margin: calc(var(--spacing) * 0) !important;
   }
+  .m-5 {
+    margin: calc(var(--spacing) * 5);
+  }
   .mx-2 {
     margin-inline: calc(var(--spacing) * 2);
   }
@@ -682,6 +685,9 @@
   }
   .\!p-8 {
     padding: calc(var(--spacing) * 8) !important;
+  }
+  .p-5 {
+    padding: calc(var(--spacing) * 5);
   }
   .p-10 {
     padding: calc(var(--spacing) * 10);
