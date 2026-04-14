@@ -19,6 +19,29 @@ function toggleMenu() {
   }
 }
 
+/* Accordions */
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function () {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    var plus = this.querySelector(".bi-plus");
+    var minus = this.querySelector(".bi-dash");
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+      plus.style.display = "block";
+      minus.style.display = "none";
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+      plus.style.display = "none";
+      minus.style.display = "block";
+    }
+  });
+}
+
 /* Swiper - reviews */
 var swiper = new Swiper(".swiperReviews", {
   spaceBetween: 30,
