@@ -784,6 +784,10 @@
     font-size: var(--text-6xl) !important;
     line-height: var(--tw-leading, var(--text-6xl--line-height)) !important;
   }
+  .\!text-9xl {
+    font-size: var(--text-9xl) !important;
+    line-height: var(--tw-leading, var(--text-9xl--line-height)) !important;
+  }
   .\!text-base {
     font-size: var(--text-base) !important;
     line-height: var(--tw-leading, var(--text-base--line-height)) !important;
