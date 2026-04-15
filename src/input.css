@@ -103,9 +103,18 @@ ol {
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.accordion.active {
-  background-color: var(--color-sports-dark-blue-100);
-  color: white;
+.accordion.bg-sports-purple-100.active {
+  background-color: var(--color-sports-purple-40);
+  color: black;
+}
+
+.accordion.bg-sports-dark-blue-100.active {
+  background-color: var(--color-sports-dark-blue-40);
+  color: black;
+}
+
+.accordion.bg-sports-darker-yellow-100.active {
+  background-color: var(--color-sports-darker-yellow-40);
 }
 
 .accordion-line {
