@@ -41,6 +41,13 @@ function toggleSearch() {
   }
 }
 
+/* Glightbox */
+const lightbox = GLightbox({
+  touchNavigation: true,
+  loop: true,
+  autoplayVideos: false,
+});
+
 /* Accordions */
 
 var acc = document.getElementsByClassName("accordion");
