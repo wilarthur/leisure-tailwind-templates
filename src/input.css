@@ -134,9 +134,12 @@ ol {
 }
 
 /* Swiper */
+.swiper-slide {
+}
+
 .swiper-slide-content {
-  padding: 50px;
   height: 100%;
+  padding: 50px;
 }
 
 /* Swiper buttons */
