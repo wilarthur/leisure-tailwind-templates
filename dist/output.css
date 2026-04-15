@@ -1214,36 +1214,42 @@ h1 {
   font-size: 3em;
   line-height: 130%;
   margin-bottom: 2rem;
+  font-weight: 500;
 }
 h2 {
   font-family: var(--font-heading);
   font-size: 2.4em;
   line-height: 130%;
   margin-bottom: 2rem;
+  font-weight: 500;
 }
 h3 {
   font-family: var(--font-heading);
   font-size: 2em;
   line-height: 130%;
   margin-bottom: 2rem;
+  font-weight: 500;
 }
 h4 {
   font-family: var(--font-heading);
   font-size: 1.5em;
   line-height: 130%;
   margin-bottom: 2rem;
+  font-weight: 500;
 }
 h5 {
   font-family: var(--font-heading);
   font-size: 1.25em;
   line-height: 130%;
   margin-bottom: 2rem;
+  font-weight: 500;
 }
 h6 {
   font-family: var(--font-heading);
   font-size: 1em;
   line-height: 130%;
   margin-bottom: 2rem;
+  font-weight: 500;
 }
 p, span, a, ul, ol {
   font-family: var(--font-body);
