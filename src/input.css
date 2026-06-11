@@ -25,6 +25,7 @@
   --color-sports-white-hover: #ccc;
   --color-sports-black-hover: #4c4c4c;
   --color-sports-yellow: #ffcc00;
+  --color-sports-yellow-40: #ffe88a;
   --color-sports-grey: #ececec;
   --font-heading: "poppins", sans-serif;
   --font-body: "inter-variable", sans-serif;
@@ -121,6 +122,22 @@ ol {
 
 .accordion.bg-sports-darker-yellow-100.active {
   background-color: var(--color-sports-darker-yellow-40);
+}
+
+.accordion.bg-sports-mid-blue-100.active {
+  background-color: var(--color-sports-mid-blue-40);
+}
+
+.accordion.bg-sports-green-100.active {
+  background-color: var(--color-sports-green-40);
+}
+
+.accordion.bg-sports-yellow.active {
+  background-color: var(--color-sports-yellow-40);
+}
+
+.accordion.bg-black.active {
+  background-color: rgb(66, 66, 66);
 }
 
 .accordion-line {
