@@ -95,6 +95,10 @@ ol {
   --swiper-pagination-color: black;
 }
 
+.swiper-pagination.text-white > .swiper-pagination-bullet {
+  background-color: #fff !important;
+}
+
 /* Accordions */
 
 .accordion {
