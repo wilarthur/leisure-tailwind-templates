@@ -134,6 +134,7 @@ ol {
 
 .accordion.bg-sports-green-100.active {
   background-color: var(--color-sports-green-40);
+  color: black;
 }
 
 .accordion.bg-sports-yellow.active {
