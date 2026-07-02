@@ -608,9 +608,6 @@
   .bg-black {
     background-color: var(--color-black);
   }
-  .bg-green-600 {
-    background-color: var(--color-green-600);
-  }
   .bg-red-400 {
     background-color: var(--color-red-400);
   }
@@ -1326,6 +1323,9 @@ p, span, a, ul, ol {
   font-size: 1em;
   line-height: 150%;
   margin-bottom: 1rem;
+}
+p > a {
+  text-decoration: underline;
 }
 :root {
   --swiper-navigation-color: black;

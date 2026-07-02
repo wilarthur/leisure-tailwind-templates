@@ -89,6 +89,10 @@ ol {
   margin-bottom: 1rem;
 }
 
+p > a {
+  text-decoration: underline;
+}
+
 /* Set swiper colors */
 :root {
   --swiper-navigation-color: black;
