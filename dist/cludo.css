@@ -1,0 +1,48 @@
+.cludo-r {
+  display: flex;
+}
+.cludo-c-3 {
+  width: 25%;
+}
+
+.cludo-c-9 {
+  width: 75%;
+}
+.search-result-count {
+  margin-bottom: 1rem;
+}
+.search-results-item > a {
+  border-radius: 1.5rem;
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-bottom: 2rem;
+  box-shadow:
+    0 20px 25px -5px rgb(0 0 0 / 0.1),
+    0 8px 10px -6px rgb(0 0 0 / 0.1);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.search-results-item > a:hover {
+  box-shadow:
+    0 20px 25px -5px rgb(0 0 0 / 0.6),
+    0 8px 10px -6px rgb(0 0 0 / 0.6);
+}
+.search-result-image {
+  padding-right: 3rem;
+}
+.search-result-image img {
+  border-radius: 1.5rem;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.search-result-data {
+  padding: 2rem;
+}
+.search-results-item .file-type,
+.search-results-item .path,
+.search-result-data .path {
+  display: none;
+}
