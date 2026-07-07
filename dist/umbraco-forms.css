@@ -72,7 +72,7 @@ form label {
 
 .umbraco-forms-form .text,
 .umbraco-forms-form .datepickerfield,
-.umbraco-forms-form select {
+.umbraco-forms-form .umbraco-forms-field-wrapper select {
   width: 100% !important;
   max-width: 800px !important;
   height: 2rem !important;
@@ -107,7 +107,8 @@ form label {
 
 .umbraco-forms-form .checkboxlist input,
 .umbraco-forms-form .radiobuttonlist input,
-.umbraco-forms-form .checkbox input {
+.umbraco-forms-form .checkbox input,
+.umbraco-forms-form .dataconsent input {
   width: 24px !important;
   height: 24px !important;
   margin-bottom: 0 !important;
