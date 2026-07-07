@@ -120,10 +120,10 @@ form label {
 }
 
 .umbraco-forms-form input[type="file"]::file-selector-button {
-  background-color: red !important;
+  background-color: #012169 !important;
+  color: white !important;
   border: none !important;
   padding: 0.5rem 1rem !important;
-  background-color: red !important;
   border-radius: 2rem !important;
   transition: ease-in-out 0.3s !important;
   text-decoration: none !important;
@@ -132,7 +132,7 @@ form label {
 
 input[type="file"]::file-selector-button:hover,
 input[type="file"]::file-selector-button:focus {
-  background-color: red !important;
+  background-color: #012169 !important;
   color: white !important;
   cursor: pointer !important;
 }
@@ -235,14 +235,14 @@ input[type="file"]::file-selector-button:focus {
 .umbraco-forms-form .next,
 .umbraco-forms-form .prev,
 .umbraco-forms-form .btn.primary {
-  background-color: red !important;
+  background-color: #012169 !important;
+  color: white !important;
   border: none !important;
   padding: 0.5rem 2rem !important;
-  background-color: red !important;
   border-radius: 2rem !important;
   transition: ease-in-out 0.3s !important;
   text-decoration: none !important;
-  font-size: 1.2em !important;
+  font-size: 1em !important;
 }
 
 .umbraco-forms-form .next:hover,
@@ -251,9 +251,9 @@ input[type="file"]::file-selector-button:focus {
 .umbraco-forms-form .prev:focus,
 .umbraco-forms-form .btn.primary:hover,
 .btn.primary:focus {
-  background-color: red !important;
-  color: white !important;
+  background-color: #001849 !important;
   cursor: pointer !important;
+  text-decoration: underline !important;
 }
 
 .umbraco-forms-submitmessage {
