@@ -1,0 +1,34 @@
+#loginModel_Username,
+#loginModel_Password {
+  width: 100% !important;
+  max-width: 800px !important;
+  height: 2rem !important;
+  font-size: 1em !important;
+  border: 1px solid !important;
+  padding: 20px 5px !important;
+  margin: 28px 0 !important;
+  background-color: white !important;
+  border-radius: 5px !important;
+}
+
+label[for="loginModel_Username"],
+label[for="loginModel_Password"] {
+  font-size: 1.25em !important;
+  margin: 28px 0 !important;
+}
+
+button[type="submit"] {
+  border: none !important;
+  padding: 0.5rem 2rem !important;
+  background-color: #012169 !important;
+  color: #fff;
+  border-radius: 2rem !important;
+  transition: ease-in-out 0.3s !important;
+  text-decoration: none !important;
+}
+
+button[type="submit"]:hover,
+button[type="submit"]:focus {
+  background-color: #001849 !important;
+  cursor: pointer !important;
+}
