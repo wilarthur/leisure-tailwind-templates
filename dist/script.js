@@ -153,3 +153,49 @@ var swiper = new Swiper(".swiperGallery", {
   mousewheel: false,
   keyboard: true,
 });
+
+/* Memberships filter */
+const buttons = document.querySelectorAll(".filter-btn");
+const cards = document.querySelectorAll(".membership-card");
+
+function applyFilter(filter) {
+  buttons.forEach((button) => {
+    button.classList.toggle("active", button.dataset.filter === filter);
+  });
+
+  cards.forEach((card) => {
+    const categories = card.dataset.category.split(" ");
+
+    const show = filter === "all" || categories.includes(filter);
+
+    card.classList.toggle("hidden", !show);
+  });
+}
+
+buttons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const filter = button.dataset.filter;
+
+    applyFilter(filter);
+
+    const url = new URL(window.location);
+
+    if (filter === "all") {
+      url.searchParams.delete("filter");
+    } else {
+      url.searchParams.set("filter", filter);
+    }
+
+    history.pushState({}, "", url);
+  });
+});
+
+// Initial page load
+const params = new URLSearchParams(window.location.search);
+applyFilter(params.get("filter") || "all");
+
+// Browser Back/Forward buttons
+window.addEventListener("popstate", () => {
+  const params = new URLSearchParams(window.location.search);
+  applyFilter(params.get("filter") || "all");
+});

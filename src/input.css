@@ -280,3 +280,31 @@ p > a {
 .swiperGallery .swiper-slide {
   height: auto;
 }
+
+/* Membership filters */
+section.bg-sports-dark-blue-10 button.active,
+section.bg-sports-dark-blue-20 button.active,
+section.bg-sports-dark-blue-40 button.active,
+section.bg-sports-dark-blue-100 button.active,
+section.bg-sports-darker-yellow-10 button.active,
+section.bg-sports-darker-yellow-20 button.active,
+section.bg-sports-darker-yellow-40 button.active,
+section.bg-sports-darker-yellow-100 button.active,
+section.bg-sports-green-10 button.active,
+section.bg-sports-green-20 button.active,
+section.bg-sports-green-40 button.active,
+section.bg-sports-green-100 button.active,
+section.bg-sports-mid-blue-10 button.active,
+section.bg-sports-mid-blue-20 button.active,
+section.bg-sports-mid-blue-40 button.active,
+section.bg-sports-mid-blue-100 button.active,
+section.bg-sports-purple-10 button.active,
+section.bg-sports-purple-20 button.active,
+section.bg-sports-purple-40 button.active,
+section.bg-sports-purple-100 button.active,
+section.bg-sports-yellow button.active,
+section.bg-sports-yellow-40 button.active {
+  background-color: #000 !important;
+  color: #fff !important;
+  cursor: not-allowed !important;
+}

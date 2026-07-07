@@ -8,7 +8,6 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-red-400: oklch(70.4% 0.191 22.216);
-    --color-green-600: oklch(62.7% 0.194 149.214);
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
@@ -1463,6 +1462,11 @@ p > a {
 }
 .swiperGallery .swiper-slide {
   height: auto;
+}
+section.bg-sports-dark-blue-10 button.active, section.bg-sports-dark-blue-20 button.active, section.bg-sports-dark-blue-40 button.active, section.bg-sports-dark-blue-100 button.active, section.bg-sports-darker-yellow-10 button.active, section.bg-sports-darker-yellow-20 button.active, section.bg-sports-darker-yellow-40 button.active, section.bg-sports-darker-yellow-100 button.active, section.bg-sports-green-10 button.active, section.bg-sports-green-20 button.active, section.bg-sports-green-40 button.active, section.bg-sports-green-100 button.active, section.bg-sports-mid-blue-10 button.active, section.bg-sports-mid-blue-20 button.active, section.bg-sports-mid-blue-40 button.active, section.bg-sports-mid-blue-100 button.active, section.bg-sports-purple-10 button.active, section.bg-sports-purple-20 button.active, section.bg-sports-purple-40 button.active, section.bg-sports-purple-100 button.active, section.bg-sports-yellow button.active, section.bg-sports-yellow-40 button.active {
+  background-color: #000 !important;
+  color: #fff !important;
+  cursor: not-allowed !important;
 }
 @property --tw-translate-x {
   syntax: "*";
