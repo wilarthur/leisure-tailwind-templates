@@ -199,3 +199,18 @@ window.addEventListener("popstate", () => {
   const params = new URLSearchParams(window.location.search);
   applyFilter(params.get("filter") || "all");
 });
+
+/* Video hero */
+const heroVideo = document.getElementById("hero_video");
+const playPauseButton = document.getElementById("play_pause_button");
+
+function playPauseVideo() {
+  if (heroVideo.paused) {
+    heroVideo.play();
+    playPauseButton.innerHTML = '<i class="bi bi-pause mr-3 text-xl"></i>Pause';
+  } else {
+    heroVideo.pause();
+    playPauseButton.innerHTML =
+      '<i class="bi bi-play-fill mr-3 text-xl"></i>Play';
+  }
+}

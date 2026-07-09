@@ -13,28 +13,33 @@
 </head>
 
 <body>
-    <section>
-        <div class="w-full h-[75vh] bg-cover bg-center"
-            style="background-image:url('https://www.biblecenterchurch.com/wp-content/uploads/2018/10/video-placeholder.png')"
-            alt="">
-            <div class="h-full flex flex-col justify-end">
-                <div class="bg-gradient-to-b from-transparent to-black pb-10">
-                    <div class="container mx-auto">
-                        <h1 class="text-white lg:!text-6xl !text-4xl font-bold">FITNESS FOR <br> <span
-                                class="text-sports-darker-yellow-100 lg:!text-8xl !text-6xl">EVERYONE</span></h1>
-                        <div class="flex justify-between"><a
-                                class="bg-white text-black font-bold px-6 py-2 mr-3 rounded-full flex items-center hover:bg-sports-darker-yellow-100 transition-all ease-in-out"
-                                href="/">Become a member</a>
-                            <a
-                                class="bg-white text-black px-6 py-2 rounded-xl flex items-center hover:bg-sports-darker-yellow-100 cursor-pointer transition-all ease-in-out"><i
-                                    class="bi bi-play-fill mr-3 text-xl"></i>Play
-                                video</a>
-                        </div>
+    <section class="relative h-[75vh] max-h-[75vh] w-full overflow-hidden">
+        <video id="hero_video" class="absolute inset-0 h-full w-full object-cover object-center" aria-hidden="true"
+            autoplay="" loop="" muted="" playsinline="" webkit-playsinline="" preload="none">
+            <source type="video/mp4"
+                data-src="https://player.vimeo.com/progressive_redirect/playback/1208371242/rendition/1080p/file.mp4%20%281080p%29.mp4?loc=external&signature=b1b11a29dbedbf00b868bc9d708559aba54b4b11e6d00c40361aff1f00767d16"
+                src="https://player.vimeo.com/progressive_redirect/playback/1208371242/rendition/1080p/file.mp4%20%281080p%29.mp4?loc=external&signature=b1b11a29dbedbf00b868bc9d708559aba54b4b11e6d00c40361aff1f00767d16">
+        </video>
+        <div class="h-full absolute bottom-0 w-full flex flex-col justify-end px-5 md:px-0 ">
+            <div class="bg-gradient-to-b from-transparent to-black pb-10">
+                <div class="container mx-auto">
+                    <h1 class="text-white lg:!text-6xl !text-4xl font-bold">FITNESS FOR <br> <span
+                            class="text-sports-darker-yellow-100 lg:!text-8xl !text-6xl">EVERYONE</span></h1>
+                    <div class="flex justify-between items-baseline"><a
+                            class="bg-white text-black font-bold px-6 py-2 mr-3 rounded-full flex items-center hover:bg-sports-darker-yellow-100 transition-all ease-in-out"
+                            href="/">Become a member</a>
+                        <button id="play_pause_button"
+                            class="bg-white text-black px-6 py-2 rounded-xl flex items-center hover:bg-sports-darker-yellow-100 cursor-pointer transition-all ease-in-out"
+                            onclick="playPauseVideo()"><i class="bi bi-pause mr-3 text-xl"></i>Pause</button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+
+
+
 </body>
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
