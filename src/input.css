@@ -93,6 +93,15 @@ p > a {
   text-decoration: underline;
 }
 
+.rte-content ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+.rte-content ol {
+  list-style: decimal;
+  padding-left: 1.5rem;
+}
+
 /* Set swiper colors */
 :root {
   --swiper-navigation-color: black;
