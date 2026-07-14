@@ -32,3 +32,22 @@
   cursor: pointer !important;
   text-decoration: underline !important;
 }
+
+/* Hide directory accordion on mobile */
+.directories-accordion {
+  display: none;
+}
+
+.directories-table__table {
+  display: table;
+  border-spacing: 0;
+  margin-bottom: 36px;
+  width: 100%;
+  background-color: #fff;
+  text-align: left;
+}
+
+.directories-table__table a {
+  text-decoration: underline;
+  color: #001849;
+}
