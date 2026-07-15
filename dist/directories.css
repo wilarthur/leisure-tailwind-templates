@@ -1,3 +1,11 @@
+.field_wrap {
+  margin-bottom: 1rem;
+}
+
+.submit_wrap {
+  margin-bottom: 2rem;
+}
+
 .field_wrap.__text > .label_wrap {
   font-size: 1.2em;
   color: #012169;
@@ -50,4 +58,16 @@
 .directories-table__table a {
   text-decoration: underline;
   color: #001849;
+}
+
+.directories-table__table thead tr th {
+  color: white;
+  background-color: #012169;
+  padding: 1rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.directories-table__table tbody {
+  border: 1px solid #012169;
 }
