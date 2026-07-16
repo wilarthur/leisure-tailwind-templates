@@ -101,10 +101,35 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #ececec;
+  background-color: white;
   border: 1px solid black;
   width: 40px;
   height: 40px;
+  transition: ease-in-out 0.3s;
+}
+
+.directories-table .table-paging ul.paging li.active {
+  background-color: #012169;
+  color: white;
+}
+
+.directories-table .table-paging ul.paging li.active:hover {
+  background-color: #012169;
+  cursor: not-allowed;
+  text-decoration: none;
+}
+
+.directories-table .table-paging ul.paging li:hover {
+  background-color: #001849;
+  color: white;
+  text-decoration: underline;
+}
+
+.directories-table .table-paging ul.paging li.disabled {
+  color: black;
+  background-color: #ececec;
+  cursor: not-allowed;
+  text-decoration: none;
 }
 
 .directories-table .table-paging ul.paging li.active.d-md-none {
