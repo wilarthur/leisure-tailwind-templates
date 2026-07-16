@@ -5,6 +5,17 @@
   width: 25%;
 }
 
+.cludo-c-3 .search-filters {
+  margin: 2.5rem;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 1.5rem;
+}
+
+.cludo-c-3 .search-filters a:hover {
+  text-decoration: underline;
+}
+
 .cludo-c-9 {
   width: 75%;
 }
