@@ -107,18 +107,32 @@
   height: 40px;
 }
 
+.directories-table .table-paging ul.paging li.active.d-md-none {
+  display: none;
+}
+
 .directories-table .table-paging ul.paging li span,
 .directories-table .table-paging ul.paging li a {
   margin: 0;
 }
 
-.directories-table .d-md-none {
-  display: none;
+.paging li:last-child a::before,
+.paging li:last-child button::before,
+.paging li:last-child span::before {
+  content: "\F285";
+  font-family: "Bootstrap-icons";
+}
+
+.paging li:first-child a::before,
+.paging li:first-child button::before,
+.paging li:first-child span::before {
+  content: "\F284";
+  font-family: "Bootstrap-icons";
 }
 
 /* Hide directory accordion on mobile */
 .directories-accordion {
-  display: none !important;
+  display: none;
 }
 
 /* Mobile */
@@ -133,6 +147,65 @@
   }
 
   .directories-accordion {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 36px;
+  }
+
+  .directories-accordion__item {
+    border: 1px solid #012169;
+    overflow: hidden;
+  }
+
+  .directories-accordion__item:open .directories-accordion__summary {
+    background: #001849;
+  }
+
+  .directories-accordion__summary {
+    cursor: pointer;
+    color: white;
+    background: #012169;
+    font-weight: 600;
+    padding: 19px 40px 19px 16px;
+    line-height: 1.375;
+    position: relative;
+  }
+
+  .directories-accordion__summary::after {
+    content: "\F285";
+    font-family: "Bootstrap-icons";
+    position: absolute;
+    right: 16px;
+    transition: transform 0.15s ease-in-out;
+  }
+
+  .directories-accordion__item:open .directories-accordion__summary::after {
+    transform: rotate(90deg);
+  }
+
+  details > summary {
+    list-style: none;
+  }
+
+  .directories-accordion__content-inner {
+    padding: 19px 16px;
+  }
+
+  .directories-accordion__dl {
+    margin: 1rem 0;
+  }
+
+  .directories-accordion__dt {
+    font-weight: bold;
+  }
+
+  .directories-table .table-paging ul.paging li.active.d-md-none {
+    display: flex;
+    width: 100px;
+  }
+
+  .directories-table .table-paging ul.paging li.d-none.d-md-flex {
+    display: none;
   }
 }
