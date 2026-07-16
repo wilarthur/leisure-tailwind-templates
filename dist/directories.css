@@ -1,3 +1,48 @@
+.directories-table__table {
+  display: table;
+  border-spacing: 0;
+  margin-bottom: 36px;
+  width: 100%;
+  background-color: #fff;
+  text-align: left;
+}
+
+.directories-table__table tbody {
+  border: 1px solid #012169;
+}
+
+.directories-table__table a {
+  text-decoration: underline;
+  color: #001849;
+}
+
+.directories-table__table thead tr th {
+  color: white;
+  background-color: #012169;
+  border: 1px solid #012169;
+  padding: 1rem;
+}
+
+.directories-table__table tbody tr td {
+  border: 1px solid #012169;
+  padding: 1rem;
+}
+
+.directories-search-container .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.directories-search-container .directories-column {
+  flex-basis: 33.33%;
+  padding: 0 8px;
+}
+
+.directories-search-container .col-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
 .field_wrap {
   margin-bottom: 1rem;
 }
@@ -6,12 +51,13 @@
   margin-bottom: 2rem;
 }
 
-.field_wrap.__text > .label_wrap {
+.field_wrap > .label_wrap {
   font-size: 1.2em;
   color: #012169;
 }
 
-.input_wrap input {
+.input_wrap input,
+.input_wrap select {
   width: 100%;
   max-width: 800px;
   height: 2rem;
@@ -20,6 +66,9 @@
   padding: 20px 5px;
   background-color: white;
   border-radius: 5px;
+  -webkit-appearance: none; /* Removes Apple's default styling */
+  -moz-appearance: none; /* Removes Firefox's default styling */
+  appearance: none; /* Standard property */
 }
 
 .submit_wrap button,
@@ -41,34 +90,49 @@
   text-decoration: underline !important;
 }
 
-/* Hide directory accordion on mobile */
-.directories-accordion {
+.directories-table .table-paging ul.paging {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+.directories-table .table-paging ul.paging li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ececec;
+  border: 1px solid black;
+  width: 40px;
+  height: 40px;
+}
+
+.directories-table .table-paging ul.paging li span,
+.directories-table .table-paging ul.paging li a {
+  margin: 0;
+}
+
+.directories-table .d-md-none {
   display: none;
 }
 
-.directories-table__table {
-  display: table;
-  border-spacing: 0;
-  margin-bottom: 36px;
-  width: 100%;
-  background-color: #fff;
-  text-align: left;
+/* Hide directory accordion on mobile */
+.directories-accordion {
+  display: none !important;
 }
 
-.directories-table__table a {
-  text-decoration: underline;
-  color: #001849;
-}
+/* Mobile */
 
-.directories-table__table thead tr th {
-  color: white;
-  background-color: #012169;
-  border: 1px solid #012169;
-  padding: 1rem;
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
-}
+@media (max-width: 768px) {
+  .directories-search-container .directories-column {
+    flex-basis: 100%;
+  }
 
-.directories-table__table tbody {
-  border: 1px solid #012169;
+  .directories-table__table {
+    display: none;
+  }
+
+  .directories-accordion {
+    display: block;
+  }
 }
