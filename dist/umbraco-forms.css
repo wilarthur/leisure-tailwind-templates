@@ -59,6 +59,21 @@ form label {
   align-items: center !important;
 }
 
+.umbraco-forms-field-wrapper {
+  flex-direction: column !important;
+  align-items: flex-start !important;
+}
+
+.umbraco-forms-field-wrapper input[aria-invalid="true"] {
+  border: 1px solid #c10006 !important;
+  background: #ffcac9 !important;
+}
+
+.umbraco-forms-field-wrapper .field-validation-error {
+  margin-top: 1rem !important;
+  color: #c10006 !important;
+}
+
 .umbraco-forms-form .checkboxlist,
 .umbraco-forms-form .radiobuttonlist {
   padding: 0px !important;
@@ -113,6 +128,18 @@ form label {
   height: 24px !important;
   margin-bottom: 0 !important;
   margin-right: 20px !important;
+}
+
+.umbraco-forms-field.dataconsent .umbraco-forms-field-wrapper {
+  flex-direction: row !important;
+  flex-wrap: wrap !important;
+}
+
+.umbraco-forms-field.dataconsent
+  .umbraco-forms-field-wrapper
+  .field-validation-error {
+  display: block !important;
+  width: 100% !important;
 }
 
 .umbraco-forms-form input[type="file"] {
