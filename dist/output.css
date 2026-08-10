@@ -436,8 +436,14 @@
   .h-screen {
     height: 100vh;
   }
+  .max-h-24 {
+    max-height: calc(var(--spacing) * 24);
+  }
   .max-h-32 {
     max-height: calc(var(--spacing) * 32);
+  }
+  .max-h-40 {
+    max-height: calc(var(--spacing) * 40);
   }
   .max-h-\[75vh\] {
     max-height: 75vh;
@@ -563,6 +569,9 @@
   }
   .gap-x-5 {
     column-gap: calc(var(--spacing) * 5);
+  }
+  .gap-x-20 {
+    column-gap: calc(var(--spacing) * 20);
   }
   .overflow-hidden {
     overflow: hidden;
@@ -832,6 +841,10 @@
   .\!text-2xl {
     font-size: var(--text-2xl) !important;
     line-height: var(--tw-leading, var(--text-2xl--line-height)) !important;
+  }
+  .\!text-3xl {
+    font-size: var(--text-3xl) !important;
+    line-height: var(--tw-leading, var(--text-3xl--line-height)) !important;
   }
   .\!text-4xl {
     font-size: var(--text-4xl) !important;
@@ -1177,6 +1190,11 @@
       grid-column: span 5 / span 5;
     }
   }
+  .lg\:col-start-2 {
+    @media (width >= 64rem) {
+      grid-column-start: 2;
+    }
+  }
   .lg\:col-start-3 {
     @media (width >= 64rem) {
       grid-column-start: 3;
@@ -1293,6 +1311,16 @@
     @media (width >= 64rem) {
       font-size: var(--text-8xl) !important;
       line-height: var(--tw-leading, var(--text-8xl--line-height)) !important;
+    }
+  }
+  .xl\:col-span-3 {
+    @media (width >= 80rem) {
+      grid-column: span 3 / span 3;
+    }
+  }
+  .xl\:col-start-3 {
+    @media (width >= 80rem) {
+      grid-column-start: 3;
     }
   }
   .xl\:my-0 {
