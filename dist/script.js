@@ -129,10 +129,10 @@ var swiper = new Swiper(".swiperMembership", {
     640: {
       slidesPerView: 1,
     },
-    768: {
+    1024: {
       slidesPerView: 2,
     },
-    1024: {
+    1280: {
       slidesPerView: 3,
     },
   },
