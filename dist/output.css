@@ -364,6 +364,9 @@
   .\!mb-2 {
     margin-bottom: calc(var(--spacing) * 2) !important;
   }
+  .-mb-20 {
+    margin-bottom: calc(var(--spacing) * -20);
+  }
   .mb-3 {
     margin-bottom: calc(var(--spacing) * 3);
   }
@@ -522,17 +525,11 @@
   .grid-cols-5 {
     grid-template-columns: repeat(5, minmax(0, 1fr));
   }
-  .grid-cols-6 {
-    grid-template-columns: repeat(6, minmax(0, 1fr));
-  }
   .grid-cols-10 {
     grid-template-columns: repeat(10, minmax(0, 1fr));
   }
   .grid-rows-2 {
     grid-template-rows: repeat(2, minmax(0, 1fr));
-  }
-  .grid-rows-3 {
-    grid-template-rows: repeat(3, minmax(0, 1fr));
   }
   .flex-col {
     flex-direction: column;
@@ -1130,11 +1127,6 @@
       grid-template-columns: repeat(10, minmax(0, 1fr));
     }
   }
-  .md\:grid-rows-3 {
-    @media (width >= 48rem) {
-      grid-template-rows: repeat(3, minmax(0, 1fr));
-    }
-  }
   .md\:flex-row {
     @media (width >= 48rem) {
       flex-direction: row;
@@ -1280,11 +1272,6 @@
   .lg\:grid-cols-12 {
     @media (width >= 64rem) {
       grid-template-columns: repeat(12, minmax(0, 1fr));
-    }
-  }
-  .lg\:grid-rows-2 {
-    @media (width >= 64rem) {
-      grid-template-rows: repeat(2, minmax(0, 1fr));
     }
   }
   .lg\:flex-row {
