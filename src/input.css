@@ -94,6 +94,10 @@ ol {
   margin-bottom: 1rem;
 }
 
+p > li {
+  margin-bottom: 0.5rem;
+}
+
 p > a {
   text-decoration: underline;
 }

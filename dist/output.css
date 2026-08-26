@@ -1400,6 +1400,9 @@ p, span, a, ul, ol {
   line-height: 150%;
   margin-bottom: 1rem;
 }
+p > li {
+  margin-bottom: 0.5rem;
+}
 p > a {
   text-decoration: underline;
 }
