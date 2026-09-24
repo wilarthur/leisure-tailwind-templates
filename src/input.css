@@ -102,6 +102,46 @@ p > a {
   text-decoration: underline;
 }
 
+li.bullet-arrow-black {
+  align-items: center;
+  margin: 10px 0;
+  padding-left: 2rem;
+  list-style: none;
+  background: url("/img/Bullets/icon_get_in_arrow_black_4x.webp") no-repeat left
+    0.25rem;
+  background-size: 16px;
+}
+
+li.bullet-arrow-white {
+  align-items: center;
+  margin: 10px 0;
+  padding-left: 2rem;
+  list-style: none;
+  background: url("/img/Bullets/icon_get_in_arrow_white_4x.webp") no-repeat left
+    0.25rem;
+  background-size: 16px;
+}
+
+li.bullet-star-black {
+  align-items: center;
+  margin: 10px 0;
+  padding-left: 2rem;
+  list-style: none;
+  background: url("/img/Bullets/icon_get_in_star_black_4x.webp") no-repeat left
+    0.25rem;
+  background-size: 16px;
+}
+
+li.bullet-star-white {
+  align-items: center;
+  margin: 10px 0;
+  padding-left: 2rem;
+  list-style: none;
+  background: url("/img/Bullets/icon_get_in_star_white_4x.webp") no-repeat left
+    0.25rem;
+  background-size: 16px;
+}
+
 .rte-content ul {
   list-style: disc;
   padding-left: 1.5rem;
