@@ -1408,6 +1408,9 @@ p > li {
 p > a {
   text-decoration: underline;
 }
+li > p {
+  margin: 10px 0;
+}
 li.bullet-arrow-black {
   align-items: center;
   margin: 10px 0;
