@@ -48,7 +48,7 @@
     --color-sports-mid-blue-40: #99cbdf;
     --color-sports-mid-blue-20: #cce5ef;
     --color-sports-mid-blue-10: #e5f2f7;
-    --color-sports-green-100: #008b29;
+    --color-sports-green-100: #008528;
     --color-sports-green-40: #99d1a9;
     --color-sports-green-20: #cce8d4;
     --color-sports-green-10: #e5f3ea;
@@ -370,9 +370,6 @@
   .-mb-20 {
     margin-bottom: calc(var(--spacing) * -20);
   }
-  .mb-2 {
-    margin-bottom: calc(var(--spacing) * 2);
-  }
   .mb-3 {
     margin-bottom: calc(var(--spacing) * 3);
   }
@@ -384,9 +381,6 @@
   }
   .mb-12 {
     margin-bottom: calc(var(--spacing) * 12);
-  }
-  .-ml-8 {
-    margin-left: calc(var(--spacing) * -8);
   }
   .block {
     display: block;
@@ -846,9 +840,6 @@
   }
   .pl-5 {
     padding-left: calc(var(--spacing) * 5);
-  }
-  .pl-8 {
-    padding-left: calc(var(--spacing) * 8);
   }
   .text-center {
     text-align: center;
