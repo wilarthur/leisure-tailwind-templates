@@ -276,6 +276,35 @@ li.bullet-star-white {
 
 /* Swiper gallery */
 
+.swiper-button-prev-gallery.standard-arrow,
+.swiper-button-next-gallery.standard-arrow,
+.swiper-button-prev-gallery.getin-arrow,
+.swiper-button-next-gallery.getin-arrow {
+  width: 35px;
+  height: 35px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.swiper-button-prev-gallery.standard-arrow {
+  background-image: url("/img/Bullets/icon_arrow_standard_black_4x.webp");
+  transform: scaleX(-1);
+}
+
+.swiper-button-next-gallery.standard-arrow {
+  background-image: url("/img/Bullets/icon_arrow_standard_black_4x.webp");
+}
+
+.swiper-button-prev-gallery.getin-arrow {
+  background-image: url("/img/Bullets/icon_get_in_arrow_black_4x.webp");
+  transform: scaleX(-1);
+}
+
+.swiper-button-next-gallery.getin-arrow {
+  background-image: url("/img/Bullets/icon_get_in_arrow_black_4x.webp");
+}
+
 @media (min-width: 1536px) {
   .swiper-button-prev-gallery {
     left: calc(var(--swiper-navigation-size) * 4.25);
