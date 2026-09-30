@@ -1,0 +1,87 @@
+
+<!-- 
+    This is a custom template for the Page Lister block in Umbraco.
+    It displays a list of items with configurable styles and columns.
+    The available styles are defined in the ListerStyleOptions enum, and the column options are defined in the ListerColumnOptions enum.
+    The block can display images, titles, and summaries based on the selected style. -->
+
+@inherits UmbracoViewPage<BlockListItem>
+@using ChelmsfordCityCouncil.Leisure.Common.Models
+@using ChelmsfordCityCouncil.Leisure.Common.Models.Enums
+@{
+    var content = Model.Content as PageLister;
+    if (content == null) { return; }
+
+    var config = content.DisplayConfiguration?.FirstOrDefault()?.Content as ListerDisplayOptions;
+    var style   = config?.Style   ?? ListerStyleOptions.Title;
+    var columns = config?.Columns ?? ListerColumnOptions.Two;
+
+    var colsClass = columns switch
+    {
+        ListerColumnOptions.One   => "grid-cols-1",
+        ListerColumnOptions.Two   => "grid-cols-1 lg:grid-cols-2",
+        ListerColumnOptions.Three => "grid-cols-1 lg:grid-cols-3",
+        ListerColumnOptions.Four  => "grid-cols-1 lg:grid-cols-4",
+        _                         => "grid-cols-1 lg:grid-cols-2"
+    };
+
+    var showImage   = style is ListerStyleOptions.TitleAndImage or ListerStyleOptions.TitleAndImageAndSummary or ListerStyleOptions.Image or ListerStyleOptions.CompactTitleAndImage;
+    var showSummary = style is ListerStyleOptions.TitleAndSummary or ListerStyleOptions.TitleAndImageAndSummary or ListerStyleOptions.CompactTitleAndSummary;
+    var isCompact   = style is ListerStyleOptions.CompactTitle or ListerStyleOptions.CompactTitleAndSummary or ListerStyleOptions.CompactTitleAndImage;
+    var imageLeft   = style == ListerStyleOptions.CompactTitleAndImage ||
+                      (style == ListerStyleOptions.TitleAndImageAndSummary && columns == ListerColumnOptions.One);
+
+    var items = content.GetListerItems();
+}
+
+@if (items.Any())
+{
+    <section class="py-6">
+        <div class="container mx-auto px-5 md:px-0">
+
+            @if (!string.IsNullOrWhiteSpace(content.Heading))
+            {
+                <h2>@content.Heading</h2>
+            }
+
+            <div class="grid @colsClass gap-6">
+                @foreach (var item in items)
+                {
+                    <a href="@item.Url" target="@item.Target" class="block @(isCompact ? "" : "bg-white rounded-3xl overflow-hidden") hover:opacity-90 transition-opacity">
+
+                        @if (showImage && !imageLeft && item.Image != null)
+                        {
+                            <img src="@item.Image.GetCropUrl(width: 800, furtherOptions: "&format=webp", quality: 80)"
+                                 alt="@item.Image.AltText()"
+                                 class="w-full @(isCompact ? "h-32" : "h-48") object-cover" />
+                        }
+
+                        <div class="@(isCompact ? "py-2" : "p-6") @(imageLeft && item.Image != null ? "flex items-center gap-4" : "")">
+
+                            @if (imageLeft && item.Image != null)
+                            {
+                                <img src="@item.Image.GetCropUrl(width: 200, furtherOptions: "&format=webp", quality: 80)"
+                                     alt="@item.Image.AltText()"
+                                     class="w-16 h-16 object-cover rounded flex-shrink-0" />
+                            }
+
+                            <div>
+                                @if (style != ListerStyleOptions.Image)
+                                {
+                                    <h3 class="@(isCompact ? "text-base font-semibold" : "text-xl font-semibold") mb-1">@item.Title</h3>
+                                }
+                                @if (showSummary && !string.IsNullOrWhiteSpace(item.Summary))
+                                {
+                                    @_umbracoHelpers.TransformBulletLists(item.Summary)
+                                }
+                            </div>
+
+                        </div>
+
+                    </a>
+                }
+            </div>
+
+        </div>
+    </section>
+}
